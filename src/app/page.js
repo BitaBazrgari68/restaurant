@@ -1,103 +1,137 @@
-import Image from "next/image";
+'use client';
+import React, { useState, useEffect } from 'react';
 
+import { ArrowLeft, Play, Star, Users, TrendingUp, Shield, Smartphone, Cloud, BarChart3, Clock, CheckCircle2, Menu, X } from 'lucide-react';
+import RestaurantSoftwarePage from '@/components/RestaurantSoftwarePage';
+import Path from '@/components/Path';
+import Header from '@/components/Header';
+import Heroimage from '@/components/Heroimage';
+import Footer from '@/components/Footer';
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  return (
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50" dir="rtl">
+        {<Header />}
+        { < Heroimage/> }
+        {/* Features Section */}
+        {<Path />}
+        {<RestaurantSoftwarePage />}
+
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                چرا ماپرا را انتخاب کنید؟
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                امکانات پیشرفته و یکپارچه برای مدیریت هوشمند رستوران، کافی شاپ و فست فود
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: <Smartphone className="w-8 h-8" />,
+                  title: "منو دیجیتال هوشمند",
+                  description: "سفارش‌گیری بدون تماس با QR کد و پرداخت آنلاین"
+                },
+                {
+                  icon: <Cloud className="w-8 h-8" />,
+                  title: "مدیریت ابری",
+                  description: "دسترسی از هرجا و هر زمان به اطلاعات کسب‌وکار"
+                },
+                {
+                  icon: <BarChart3 className="w-8 h-8" />,
+                  title: "تحلیل فروش پیشرفته",
+                  description: "گزارش‌های دقیق و تحلیل روند فروش و سودآوری"
+                },
+                {
+                  icon: <Users className="w-8 h-8" />,
+                  title: "باشگاه مشتریان",
+                  description: "افزایش وفاداری مشتریان با پیام‌های هوشمند"
+                },
+                {
+                  icon: <Shield className="w-8 h-8" />,
+                  title: "امنیت بالا",
+                  description: "حفاظت کامل از اطلاعات با رمزگذاری پیشرفته"
+                },
+                {
+                  icon: <Clock className="w-8 h-8" />,
+                  title: "پشتیبانی ۲۴/۷",
+                  description: "دریافت کمک فنی در تمامی ساعات شبانه‌روز"
+                }
+              ].map((feature, index) => (
+                <div key={index} className="group p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="py-20 bg-gradient-to-bl from-blue-600 to-purple-700">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+              {[
+                { number: "۵۰۰+", label: "رستوران فعال" },
+                { number: "۳۰۰%", label: "افزایش کارایی" },
+                { number: "۲۴/۷", label: "پشتیبانی" },
+                { number: "۹۹.۹%", label: "آپتایم سرور" }
+              ].map((stat, index) => (
+                <div key={index} className="group">
+                  <div className="text-4xl lg:text-5xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">
+                    {stat.number}
+                  </div>
+                  <div className="text-blue-200 text-lg">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              آماده شروع هستید؟
+            </h2>
+            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+              همین الان شروع کنید و تفاوت را در کسب‌وکارتان مشاهده کنید
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <button className="bg-gradient-to-l from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+                <span>شروع رایگان ۳۰ روزه</span>
+                <ArrowLeft size={20} />
+              </button>
+              <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-2xl font-bold text-lg hover:border-blue-500 hover:text-blue-600 transition-all duration-300">
+                مشاوره رایگان
+              </button>
+            </div>
+
+            <div className="flex justify-center items-center gap-6 text-sm text-gray-500">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-green-500" />
+                <span>بدون نیاز به کارت اعتباری</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 size={16} className="text-green-500" />
+                <span>راه‌اندازی در کمتر از ۵ دقیقه</span>
+              </div>
+            </div>
+          </div>
+        </section>
+<Footer/>
+        
+        
+      </div>
+    </>
+
   );
 }

@@ -35,6 +35,7 @@ body {
   height: 2350px;
   overflow: hidden;
   position: relative;
+  
 }
 
 .path .pathinfo {
@@ -71,7 +72,7 @@ body {
 
 .path ul li .title b {
   display: block;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 58px;
   line-height: 90px;
 }
@@ -365,5 +366,325 @@ body {
   
   clip-path: path("M64 0H1315C1345.17...");
 
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    margin-top: -125px;
+}
+.images picture.active img {
+    opacity: 1;
+}
+.images img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    min-width: 700px;
+}
+.content{
+  width: 1326px; 
+  height: 828.75px;
+   display: block;
+}
+
+.whyMupra .content {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+.whyMupra .desc {
+    
+    position: absolute;
+    background: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 222;
+  
+    box-shadow: 0 20px 60px rgba(185, 198, 216, .4);
+}
+
+.whyMupra .desc.order.desc1 {
+    left: 19%;
+    top: 43%;
+}
+.whyMupra .desc.active {
+    display: block;
+}
+.whyMupra .desc {
+    position: absolute;
+    background: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 222;
+    box-shadow: 0 20px 60px rgba(185, 198, 216, .4);
+}
+
+.whyMupra .desc.order.desc1 .ripple {
+    top: -23px;
+    right: -26px;
+}
+.ripple {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.ripple:before {
+    background: url(/ripple.svg) no-repeat center;
+    background-size: cover;
+}
+.ripple:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.ripple:after {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #2e73ce;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.ripple:after, .ripple:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.whyMupra .desc h5.title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 35px;
+}
+.whyMupra .desc ul {
+    padding-right: 20px;
+}
+.whyMupra .desc ul li {
+    list-style: disc;
+    text-align: right;
+    color: #0f1f33;
+    font-size: 14px;
+    line-height: 28px;
+    position: relative;
+}
+.whyMupra .desc ul li::marker {
+    color: #2e73ce;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
+.whyMupra .desc.order.desc2 {
+    left: 51%;
+    bottom: 48%;
+}
+.whyMupra .desc.order.desc2 .ripple {
+    bottom: -27px;
+    left: -20px;
+}
+
+.whyMupra .desc.order.desc3 {
+    left: 44%;
+    top: 33%;
+}
+
+.whyMupra .desc.order.desc4 {
+    left: 73%;
+    top: 49%;
+}
+.whyMupra .desc.order.desc4 .ripple {
+    bottom: -26px;
+    left: -23px;
+}
+
+
+
+.whyMupra .desc.preparing.desc1 {
+    right: 5%;
+    top: 16%;
+}
+.whyMupra .desc.preparing.desc1 .ripple {
+    bottom: -20px;
+    left: -25px;
+}
+
+.whyMupra .desc.preparing.desc2 {
+    left: 74%;
+    bottom: 18%;
+}
+.whyMupra .desc ul li {
+    list-style: disc;
+    text-align: right;
+    color: #0f1f33;
+    font-size: 14px;
+    line-height: 28px;
+    position: relative;
+}
+
+.whyMupra .desc.preparing.desc2 .ripple {
+    top: -21px;
+    left: -23px;
+}
+.whyMupra .desc.preparing.desc3 {
+    top: 18%;
+    left: 59%;
+}
+.whyMupra .desc.order.desc3 .ripple {
+    bottom: -26px;
+    left: -23px;
+}
+.whyMupra .desc {
+     position: absolute;
+    background: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 222;
+    display: none;
+    box-shadow: 0 20px 60px rgba(185, 198, 216, .4);
+}
+.whyMupra .desc.payAndSurvey.desc1 {
+    left: 6%;
+    top: 50%;
+}
+.whyMupra .desc.payAndSurvey.desc1 .ripple {
+    bottom: -34px;
+    right: -5%;
+}
+.whyMupra .desc.payAndSurvey.desc2 {
+    left: 17%;
+    bottom: 16%;
+}
+.whyMupra .desc.payAndSurvey.desc2 .ripple {
+    top: -27px;
+    right: -26px;
+}
+.whyMupra .desc.payAndSurvey.desc3 {
+    bottom: 42%;
+    left: 40%;
+}
+.whyMupra .desc.payAndSurvey.desc3 .ripple {
+    bottom: -27px;
+    left: -23px;
+}
+.whyMupra .desc.payAndSurvey.desc4 {
+    bottom: 20%;
+    left: 49%;
+}
+.whyMupra .desc.payAndSurvey.desc4 .ripple {
+    top: -23px;
+    left: -26px;
+}
+
+.whyMupra .desc.managment.desc1 {
+    left: 4%;
+    top: 22%;
+}
+.whyMupra .desc.managment.desc1 .ripple {
+    bottom: -24px;
+    right: -24px;
+}
+.whyMupra .desc.managment.desc2 {
+    left: 14%;
+    top: 43%;
+}
+.whyMupra .desc.managment.desc2 .ripple {
+    top: -26px;
+    left: -23px;
+}
+.whyMupra .desc.managment.desc3 {
+    top: 34%;
+    left: 26%;
+}
+.whyMupra .desc.managment.desc3 .ripple {
+    top: -26px;
+    left: -24px;
+}
+.whyMupra .desc.managment.desc4 {
+    top: 23%;
+    left: 25%;
+}
+.whyMupra .desc.managment.desc4 .ripple {
+    bottom: -23px;
+    left: -23px;
+}
+
+
+
+.whyMupra {
+    margin: 30px auto 5px;
+}
+.whyMupra h2 {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 62px;
+    display: block;
+}
+.whyMupra h2 {
+    text-align: center;
+    color: var(--darkbluetext);
+}
+.whyMupra>p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 62px;
+    display: block;
+    margin-bottom: 22px;
+}
+.whyMupra>p {
+    text-align: center;
+    color: #0F1F33;
+}
+.mupraSwitch {
+    background: #fff;
+    border-radius: 53px;
+    width: fit-content;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    display: flex
+;
+    max-width: 100%;
+    
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mupraSwitch button.active {
+    color: #fafbfe;
+    background-color: #2e73ce;
+}
+.mupraSwitch button {
+    text-align: center;
+    transition: color .5s ease;
+    position: relative;
+    flex: 1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    background: 0 0;
+    border: 0;
+    z-index: 1;
+    min-width: fit-content;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+ .desc.preparing.desc3 .ripple {
+    bottom: -22px;
+    left: -23px;
 }
 

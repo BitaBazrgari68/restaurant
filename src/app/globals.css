@@ -3,7 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #101828;
+  --secondary : #dfae00;
 }
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -324,9 +334,7 @@ body {
     font-size: 24px;
     line-height: 37px;
 }
-.footer .socialmedia .t2 {
-    color: #2e73ce;
-}
+
 .footer .socialmedia ul {
     display: flex
 ;

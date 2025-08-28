@@ -1,72 +1,371 @@
+'use client'
+import React, { useState } from 'react';
+import {
+    ChevronDown,
+    Home,
+    FolderCode,
+    Utensils ,
+    ShoppingCart,
+    Puzzle ,
+    ScanText ,
+   Workflow ,
+    Users,
+    Settings,
+    BarChart3,
+    Smartphone,
+    Globe,
+    Clock,
+    Phone,
+    Mail,
+    MapPin,
+    Coffee,
+    UtensilsCrossed,
+    Calculator,
+    Store,
+    QrCode,
+    Printer,
+    Warehouse,
+    TrendingUp,
+    Calendar,
+    MessageSquare,
+    Headphones,
+    FileText,
+    Star,
+    Menu,
+    X,
+    ChevronLeft
+} from 'lucide-react';
+import Image from 'next/image'
+import Link from 'next/link';
+const Header = () => {
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null);
 
-"use client"
+    const menuItems = [
+        {
+            title: 'خانه',
+            icon: <Home className="w-4 h-4" />,
+            href: '/'
+        },
+        {
+            title: 'نرم افزار ها',
+            icon: <FolderCode className="w-4 h-4" />,
+            hasDropdown: true,
+            submenu: {
+                columns: [
+                    {
+                        title: 'نرم افزار رستوران و فست فود',
+                        icon: <Utensils  className="w-5 h-5 text-blue-600" />,
+                    },
+                    {
+                        title: '   نرم افزار تشخیص هوشمند پلاک خودرو  ',
+                        icon: <ScanText  className="w-5 h-5 text-green-600" />,
+                    },
+                    {
+                        title: ' نرم افزار کافی شاپ ',
+                        icon: <Coffee  className="w-5 h-5 text-purple-600" />,
+                    },
+                    {
+                        title: ' نرم افزار جامع فروش و حسابداری ',
+                        icon: <Calculator  className="w-5 h-5 text-orange-600" />,
+                    },
+                    {
+                        title: ' اتوماسیون جامع کانبان ',
+                        icon: <Workflow  className="w-5 h-5 text-orange-600" />,
+                    },
+                    {
+                        title: ' نرم افزار انبار شناور ',
+                        icon: <Warehouse  className="w-5 h-5 text-orange-600" />,
+                    }
+                ]
+            }
+        },
+        {
+            title: ' افزونه ها ',
+            icon: <Puzzle  className="w-4 h-4" />,
+            hasDropdown: true,
+            submenu: {
+                columns: [
+                    {
+                        title: 'رستوران‌ها',
+                        icon: <UtensilsCrossed className="w-5 h-5 text-red-600" />,
+                        items: [
+                            { title: 'رستوران فاین داینینگ', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/fine-dining' },
+                            { title: 'رستوران خانوادگی', icon: <Users className="w-4 h-4" />, href: '/family-restaurant' },
+                            { title: 'رستوران سنتی', icon: <Home className="w-4 h-4" />, href: '/traditional' }
+                        ]
+                    },
+                    {
+                        title: 'کافی شاپ‌ها',
+                        icon: <Coffee className="w-5 h-5 text-amber-600" />,
+                        items: [
+                            { title: 'کافی شاپ', icon: <Coffee className="w-4 h-4" />, href: '/coffee-shop' },
+                            { title: 'کافه رستوران', icon: <Store className="w-4 h-4" />, href: '/cafe-restaurant' },
+                            { title: 'کافه بوک', icon: <FileText className="w-4 h-4" />, href: '/book-cafe' }
+                        ]
+                    },
+                    {
+                        title: 'فست فود',
+                        icon: <ShoppingCart className="w-5 h-5 text-yellow-600" />,
+                        items: [
+                            { title: 'فست فود', icon: <ShoppingCart className="w-4 h-4" />, href: '/fast-food' },
+                            { title: 'پیتزا', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/pizza' },
+                            { title: 'ساندویچی', icon: <Store className="w-4 h-4" />, href: '/sandwich' }
+                        ]
+                    },
+                    {
+                        title: 'سایر',
+                        icon: <Store className="w-5 h-5 text-indigo-600" />,
+                        items: [
+                            { title: 'فودکورت', icon: <Store className="w-4 h-4" />, href: '/food-court' },
+                            { title: 'کترینگ', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/catering' },
+                            { title: 'تک شعبه', icon: <MapPin className="w-4 h-4" />, href: '/single-branch' },
+                            { title: 'زنجیره‌ای', icon: <Globe className="w-4 h-4" />, href: '/chain' }
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        
+        {
+            title: 'تماس با ما',
+            icon: <Phone className="w-4 h-4" />,
+            hasDropdown: true,
+            submenu: {
+                columns: [
+                    {
+                         title: 'تلفن تماس', 
+                         icon: <Phone className="w-4 h-4 text-amber-500" />,
+                         href: '/contact',
+                         extra: '۰۲۱-۹۱۰۰۲۹۰۰' 
+                    },
+                    { 
+                        title: 'ایمیل',
+                        icon: <Mail className="w-4 h-4 text-amber-700" />, 
+                        href: '/email', 
+                        extra: 'info@mupra.ir' 
+                    },
+                    {
+                        title: 'آدرس', 
+                        icon: <MapPin className="w-4 h-4 text-fuchsia-600" />, 
+                        href: '/address', 
+                        extra: 'تهران، خیابان ولیعصر' 
+                    },
+                    { 
+                        title: 'پشتیبانی 7/24', 
+                        icon: <Clock className="w-4 h-4 text-rose-800" />, 
+                        href: '/support' 
+                    },
+                    {
+                         title: 'مشاوره رایگان', 
+                         icon: <MessageSquare className="w-4 h-4 text-cyan-700" />, 
+                         href: '/consultation' 
+                    },
+                    { 
+                        title: 'آموزش', 
+                        icon: <FileText className="w-4 h-4 text-blue-600" />, 
+                        href: '/training' 
+                    }
+                ]
+            }
+        },
+        {
+            title: 'بلاگ',
+            icon: <FileText className="w-4 h-4" />,
+            href: '/blog'
+        }
+    ];
 
+    const handleMouseEnter = (index) => {
+        setActiveMenu(index);
+    };
 
-import React, { useState, useEffect } from 'react';
+    const handleMouseLeave = () => {
+        setActiveMenu(null);
+    };
 
-import { ArrowLeft, Play, Star, Users, TrendingUp, Shield, Smartphone, Cloud, BarChart3, Clock, CheckCircle2, Menu, X } from 'lucide-react';
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+        setActiveMobileSubmenu(null);
+    };
 
-
-export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
-    const handleMouseMove = (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width) * 100;
-        const y = ((e.clientY - rect.top) / rect.height) * 100;
-        setMousePosition({ x, y });
+    const toggleMobileSubmenu = (index) => {
+        setActiveMobileSubmenu(activeMobileSubmenu === index ? null : index);
     };
 
     return (
-        <>
-            <header className="relative z-50 bg-white/90 backdrop-blur-md border-b border-blue-100/50 sticky top-0">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center py-4">
-                        <div className="flex items-center gap-4">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">م</span>
-                            </div>
-                            <span className="text-2xl font-bold bg-gradient-to-l from-blue-600 to-purple-600 bg-clip-text text-transparent">ماپرا</span>
-                        </div>
-
-                        <nav className="hidden md:flex items-center gap-8">
-                            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">خانه</a>
-                            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">امکانات</a>
-                            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">قیمت‌گذاری</a>
-                            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">درباره ما</a>
-                            <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">تماس</a>
-                        </nav>
-
-                        <div className="flex items-center gap-4">
-                            <button className="hidden md:block px-4 py-2 text-blue-600 hover:text-blue-700 transition-colors font-medium">
-                                ورود
-                            </button>
-                            <button className="bg-gradient-to-l from-blue-600 to-purple-600 text-white px-6 py-2 rounded-xl hover:shadow-lg transition-all duration-300 font-medium">
-                                شروع رایگان
-                            </button>
-                            <button
-                                className="md:hidden p-2"
-                                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            >
-                                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                            </button>
+        <nav className="relative bg-white shadow-lg mb-1 overflow-visible" dir="rtl">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div className="flex items-center justify-between h-24">
+                    <div className="flex-shrink-0">
+                        <div className="flex items-center">
+                            <Image
+                                src="/images/logo.JPG"
+                                width={170}
+                                height={130}
+                                alt="Picture of the author"
+                            />
                         </div>
                     </div>
 
-                    {/* Mobile Menu */}
-                    {isMenuOpen && (
-                        <div className="md:hidden py-4 border-t border-gray-100">
-                            <nav className="flex flex-col space-y-4">
-                                <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">خانه</a>
-                                <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">امکانات</a>
-                                <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">قیمت‌گذاری</a>
-                                <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">درباره ما</a>
-                                <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">تماس</a>
-                            </nav>
+                    <div className="hidden lg:block">
+                        <div className="flex items-baseline space-x-6 xl:space-x-8 space-x-reverse">
+                            {menuItems.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="relative group"
+                                    onMouseEnter={() => item.hasDropdown && handleMouseEnter(index)}
+                                    onMouseLeave={() => item.hasDropdown && handleMouseLeave()}
+                                >
+                                    <a
+                                        href={item.href || '#'}
+                                        className={`flex items-center px-2 lg:px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200 ${activeMenu === index
+                                            ? 'text-blue-600 bg-blue-50'
+                                            : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                                            }`}
+                                    >
+                                        {item.icon}
+                                        <span className="mr-2">{item.title}</span>
+                                        {item.hasDropdown && (
+                                            <ChevronDown className={`mr-1 h-4 w-4 transition-transform duration-200 ${activeMenu === index ? 'rotate-180' : ''
+                                                }`} />
+                                        )}
+                                    </a>
+
+                                    {item.hasDropdown && activeMenu === index && (
+                                        <div className="absolute top-full right-0 bg-white shadow-xl border border-gray-200 rounded-lg mt-1 z-50 min-w-lg">
+                                            <div className="p-4 lg:p-6">
+                                                <div className="grid grid-cols-2  gap-4 lg:gap-6 min-w-0">
+                                                    {item.submenu.columns.map((column, colIndex) => (
+                                                        <div key={colIndex} className="space-y-3">
+                                                            <div className="flex items-center space-x-2 space-x-reverse pb-2 border-b border-gray-100">
+                                                                <div className="flex-shrink-0">{column.icon}</div>
+                                                                <h3 className="text-sm  font-semibold text-gray-900 whitespace-nowrap">
+                                                                    {column.title}
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
                         </div>
-                    )}
+                    </div>
+
+                    <div className="block">
+                        <button className=" px-4 lg:px-6 py-2 border border-gray-500 rounded-lg ml-2 text-sm font-medium ">
+                            <Link href="/">
+                                ورود
+                            </Link>
+                        </button>
+                        <button className="bg-primary text-white px-4 lg:px-6 py-2 rounded-lg text-sm font-medium shadow-md">
+                            <Link href="/">
+                                دموی رایگان
+                            </Link>
+                        </button>
+
+                    </div>
+
+                    <div className="lg:hidden">
+                        <button
+                            onClick={toggleMobileMenu}
+                            className="bg-gray-100 p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-200"
+                        >
+                            {isMobileMenuOpen ? (
+                                <X className="h-6 w-6" />
+                            ) : (
+                                <Menu className="h-6 w-6" />
+                            )}
+                        </button>
+                    </div>
                 </div>
-            </header>
-        </>
-    )
-}
+
+                <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+                    <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                        {menuItems.map((item, index) => (
+                            <div key={index} className="space-y-1">
+                                <div className="flex items-center justify-between">
+                                    <a
+                                        href={item.href || '#'}
+                                        className="flex items-center flex-1 px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                                        onClick={!item.hasDropdown ? toggleMobileMenu : undefined}
+                                    >
+                                        {item.icon}
+                                        <span className="mr-3">{item.title}</span>
+                                    </a>
+                                    {item.hasDropdown && (
+                                        <button
+                                            onClick={() => toggleMobileSubmenu(index)}
+                                            className="p-2 text-gray-400 hover:text-gray-600"
+                                        >
+                                            <ChevronLeft className={`h-5 w-5 transition-transform duration-200 ${activeMobileSubmenu === index ? 'rotate-90' : ''
+                                                }`} />
+                                        </button>
+                                    )}
+                                </div>
+
+                                {item.hasDropdown && activeMobileSubmenu === index && (
+                                    <div className="bg-gray-50 rounded-lg p-3 space-y-4">
+                                        {item.submenu.columns.map((column, colIndex) => (
+                                            <div key={colIndex} className="space-y-3">
+                                                <div className="flex items-center space-x-2 space-x-reverse border-b border-gray-200 pb-2">
+                                                    {column.icon}
+                                                    <h4 className="text-sm font-semibold text-gray-900">
+                                                        {column.title}
+                                                    </h4>
+                                                </div>
+
+                                                <div className="space-y-2 pr-4">
+                                                    {column.items.map((subItem, subIndex) => (
+                                                        <a
+                                                            key={subIndex}
+                                                            href={subItem.href}
+                                                            onClick={toggleMobileMenu}
+                                                            className="flex items-center space-x-3 space-x-reverse p-2 rounded-md hover:bg-white transition-colors duration-200"
+                                                        >
+                                                            <div className="flex-shrink-0">
+                                                                {subItem.icon}
+                                                            </div>
+                                                            <div className="flex-1">
+                                                                <p className="text-sm text-gray-700 hover:text-blue-600">
+                                                                    {subItem.title}
+                                                                </p>
+                                                                {subItem.extra && (
+                                                                    <p className="text-xs text-gray-500 mt-1">
+                                                                        {subItem.extra}
+                                                                    </p>
+                                                                )}
+                                                            </div>
+                                                        </a>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+
+                        <div className="pt-4 border-t border-gray-200">
+                            <button
+                                onClick={toggleMobileMenu}
+                                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-colors duration-200 shadow-md"
+                            >
+                                شروع رایگان
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Header;

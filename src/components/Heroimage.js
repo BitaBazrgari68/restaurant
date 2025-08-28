@@ -48,8 +48,8 @@ const Heroimage = () => {
 
 
     return (
-        <div className="min-h-screen relative overflow-hidden bgHero">
-            <div className="absolute inset-0 bg-blue-500/50 "></div> 
+        <div className="min-h-screen relative overflow-hidden bgHero mx-6">
+            <div className="absolute inset-0 bg-blue-950/50 "></div> 
         
             <div className="container mx-auto px-4 py-12 grid lg:grid-cols-2 gap-10 items-center min-h-screen z-10 ">
                 {/* Left Side - Mobile Mockup */}
@@ -67,7 +67,7 @@ const Heroimage = () => {
                                     {/* Header */}
                                     <div className="px-4 py-3 bg-gradient-to-r from-blue-50 to-purple-50 border-b">
                                         <div className="flex justify-between items-center">
-                                            <h2 className="text-lg font-bold text-gray-800">ماپرا</h2>
+                                            <h2 className="text-lg font-bold text-gray-800">ترادا</h2>
                                             <div className="flex gap-2">
                                                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                                                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -146,45 +146,38 @@ const Heroimage = () => {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
                         <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                        <span className="text-sm font-medium">۷ سال انتخاب مطمئن رستوران‌های بزرگ</span>
+                        <span className="text-sm font-medium">  انتخاب مطمئن </span>
                     </div>
 
                     {/* Main Title */}
                     <div className="space-y-4">
                         <h1 className="text-5xl font-semibold text-white leading-tight">
-                            نــرم افــزار یــکــپــارچــه ابــری
-                            <span className="block bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
-                                مــاپــرا
-                            </span>
+                          نرم افزارهای یکپارچه ابری ترادا
                         </h1>
-
-                        <p className="text-xl lg:text-2xl text-white/90 font-semibold">
-                            ۷ سال انتخاب مطمئن رستوران های بزرگ و هوشمند
-                        </p>
                     </div>
 
                     {/* CTA Button */}
                     <div className="flex justify-center ">
-                        <button className="bg-gradient-to-r from-green-400 to-cyan-400 text-gray-900 px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-green-400/30 transition-all duration-300 transform hover:scale-105 hover:from-green-300 hover:to-cyan-300">
+                        <button className="bg-primary text-secondary px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 hover:from-green-300 hover:to-cyan-300">
                             مشاوره رایگان
                         </button>
                     </div>
 
                     {/* Features */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-                        <div className="bg-white/40 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div className="bg-white/60  rounded-xl p-6 border border-white/20">
                             <Users className="w-8 h-8 text-green-400 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">۳۰۰٪ افزایش کارایی</h3>
                             <p className="text-black/50 text-sm">همه ابزارها فقط در یک پنل</p>
                         </div>
 
-                        <div className="bg-white/40 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div className="bg-white/60  rounded-xl p-6 border border-white/20">
                             <TrendingUp className="w-8 h-8 text-blue-400 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">مدیریت هوشمند</h3>
                             <p className="text-black/50 text-sm">دسترسی از هرجا و هر زمان</p>
                         </div>
 
-                        <div className="bg-white/40 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div className="bg-white/60  rounded-xl p-6 border border-white/20">
                             <DollarSign className="w-8 h-8 text-yellow-400 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">کاهش هزینه</h3>
                             <p className="text-black/50 text-sm">تا ۷۷٪ کاهش هزینه بازاریابی</p>

@@ -1,13 +1,14 @@
+import Image from 'next/image';
 import React from 'react';
 import { SiAparat } from "react-icons/si";
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-12 footer relative mt-20">
+        <footer className="bg-primary text-white py-12 footer relative mt-20">
             <div className="socialmedia">
                 <i className="common-icon common-icon-socialmediaicon"></i>
                 <div>
                     <span className="t1">برای اطلاع از تخفیف ها و جدیدترین خبر ها</span>
-                    <span className="t2">ماپرا را در شبکه های اجتماعی دنبال کنید...</span>
+                    <span className="t2 text-secondary ">ترادا  را در شبکه های اجتماعی دنبال کنید...</span>
                 </div>
                 <ul>
                     <li>
@@ -47,13 +48,18 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-8">
                     <div>
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                                <span className="text-white font-bold">م</span>
+                            <div className=" rounded-xl flex items-center justify-center">
+                                <Image
+                                    src="/images/logo.JPG"
+                                    width={170}
+                                    height={130}
+                                    alt="Picture of the author"
+                                />
                             </div>
-                            <span className="text-2xl font-bold">ماپرا</span>
+                            
                         </div>
                         <p className="text-gray-400 leading-relaxed">
-                            نرم‌افزار هوشمند مدیریت رستوران، کافی‌شاپ و فست‌فود
+                            نرم افزارهای هوشمند ترادا 
                         </p>
                     </div>
 

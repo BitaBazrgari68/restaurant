@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import { SiAparat } from "react-icons/si";
+
+import logo from '../../public/images/logo.jpg'
 const Footer = () => {
     return (
         <footer className="bg-primary text-white py-12 footer relative mt-20">
@@ -50,7 +51,7 @@ const Footer = () => {
                         <div className="flex items-center gap-3 mb-4">
                             <div className=" rounded-xl flex items-center justify-center">
                                 <Image
-                                    src="/images/logo.JPG"
+                                    src={logo}
                                     width={170}
                                     height={130}
                                     alt="Picture of the author"

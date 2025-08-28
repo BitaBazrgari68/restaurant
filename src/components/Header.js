@@ -10,9 +10,6 @@ import {
     ScanText ,
    Workflow ,
     Users,
-    Settings,
-    BarChart3,
-    Smartphone,
     Globe,
     Clock,
     Phone,
@@ -22,21 +19,17 @@ import {
     UtensilsCrossed,
     Calculator,
     Store,
-    QrCode,
-    Printer,
     Warehouse,
-    TrendingUp,
-    Calendar,
     MessageSquare,
-    Headphones,
     FileText,
-    Star,
     Menu,
     X,
     ChevronLeft
 } from 'lucide-react';
+
 import Image from 'next/image'
 import Link from 'next/link';
+import logo from '../../public/images/logo.jpg'
 const Header = () => {
     const [activeMenu, setActiveMenu] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -202,7 +195,7 @@ const Header = () => {
                     <div className="flex-shrink-0">
                         <div className="flex items-center">
                             <Image
-                                src="/images/logo.JPG"
+                                src={logo}
                                 width={170}
                                 height={130}
                                 alt="Picture of the author"

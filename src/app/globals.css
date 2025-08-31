@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #101828;
-  --secondary : #dfae00;
+  --primary: #243954;
+  --secondary : #FFAC30;
 }
 .bg-primary {
   background-color: var(--primary);

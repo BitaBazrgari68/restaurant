@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import logo from '../../public/images/logo.jpg'
+import logo from '../../public/images/logo.png'
 const Footer = () => {
     return (
         <footer className="bg-primary text-white py-12 footer relative mt-20">
@@ -65,7 +65,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="font-bold text-lg mb-4">محصولات</h3>
+                        <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">محصولات</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#" className="hover:text-white transition-colors">نرم‌افزار صندوق</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">منو دیجیتال</a></li>
@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="font-bold text-lg mb-4">شرکت</h3>
+                        <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">شرکت</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#" className="hover:text-white transition-colors">درباره ما</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">تماس با ما</a></li>
@@ -85,7 +85,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="font-bold text-lg mb-4">پشتیبانی</h3>
+                        <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">پشتیبانی</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#" className="hover:text-white transition-colors">مرکز راهنمایی</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">پشتیبانی آنلاین</a></li>

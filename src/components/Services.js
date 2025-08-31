@@ -1,12 +1,12 @@
 import React from 'react';
-import { ArrowLeft, Play, Star, Users, TrendingUp, Shield, Smartphone, Cloud, BarChart3, Clock, CheckCircle2, Menu, X } from 'lucide-react';
+import { Users, Shield, Smartphone, Cloud, BarChart3, Clock } from 'lucide-react';
 const Services = () => {
     return (
         <div>
-            <section className="pb-20 bg-white">
+            <section className="pb-20 pt-10 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-4xl font-semibold drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] text-secondary mb-4">
                             چرا ترادا را انتخاب کنید؟
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -47,11 +47,11 @@ const Services = () => {
                                 description: "دریافت کمک فنی در تمامی ساعات شبانه‌روز"
                             }
                         ].map((feature, index) => (
-                            <div key={index} className="group p-8 bg-gray-200 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                                <div className="w-16 h-16 bg-gradient-to-br from-[#101828] to-slate-700 rounded-2xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <div key={index} className="group p-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                                <div className="w-16 h-16 bg-gradient-to-br from-[#243954] to-slate-500 rounded-2xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform duration-300">
                                     {feature.icon}
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                                <h3 className="text-xl font-semibold  text-secondary mb-3">{feature.title}</h3>
                                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                             </div>
                         ))}

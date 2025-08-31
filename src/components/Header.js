@@ -29,7 +29,7 @@ import {
 
 import Image from 'next/image'
 import Link from 'next/link';
-import logo from '../../public/images/logo.jpg'
+import logo from '../../public/images/logoHeader.png'
 const Header = () => {
     const [activeMenu, setActiveMenu] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -69,6 +69,10 @@ const Header = () => {
                     },
                     {
                         title: ' نرم افزار انبار شناور ',
+                        icon: <Warehouse  className="w-5 h-5 text-orange-600" />,
+                    },
+                    {
+                        title: ' سامانه مدیریت سفارش گیری و توزیع بتن و آسفالت ',
                         icon: <Warehouse  className="w-5 h-5 text-orange-600" />,
                     }
                 ]
@@ -253,12 +257,12 @@ const Header = () => {
                     </div>
 
                     <div className="block">
-                        <button className=" px-4 lg:px-6 py-2 border border-gray-500 rounded-lg ml-2 text-sm font-medium ">
+                        <button className=" px-6 py-2 border-1 border-[#FFAC30] text-[#243954] rounded-lg ml-2 text-sm font-medium">
                             <Link href="/">
                                 ورود
                             </Link>
                         </button>
-                        <button className="bg-primary text-white px-4 lg:px-6 py-2 rounded-lg text-sm font-medium shadow-md">
+                        <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md">
                             <Link href="/">
                                 دموی رایگان
                             </Link>

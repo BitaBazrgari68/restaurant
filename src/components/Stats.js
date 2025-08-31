@@ -3,7 +3,7 @@ import React from 'react';
 const Stats = () => {
     return (
         <div>
-            <section className="py-20 bg-gradient-to-r from-[#101828] to-slate-700">
+            <section className="py-20 bg-primary">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
                         {[

@@ -49,18 +49,18 @@ const Heroimage = () => {
 
     return (
         <div className="min-h-screen relative overflow-hidden bgHero mx-6">
-            <div className="absolute inset-0 bg-blue-950/50 "></div> 
+            <div className="absolute inset-0 bg-[#243954]/50 "></div> 
         
             <div className="container mx-auto px-4 py-12 grid lg:grid-cols-2 gap-10 items-center min-h-screen z-10 ">
                 {/* Left Side - Mobile Mockup */}
                 <div className="flex justify-center order-2 lg:order-1  ">
                     <div className="relative ">
                         {/* Phone Frame */}
-                        <div className="relative w-80 h-[600px] bg-gradient-to-br from-gray-900 to-black rounded-[3rem] p-3 shadow-2xl ">
+                        <div className="relative w-80 h-[600px] bg-primary rounded-[3rem] p-3 shadow-2xl ">
                             {/* Phone Screen */}
                             <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative ">
                                 {/* Notch */}
-                                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-20"></div>
+                                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-primary rounded-b-2xl z-20"></div>
 
                                 {/* Screen Content */}
                                 <div className="h-full flex flex-col pt-8">
@@ -145,7 +145,7 @@ const Heroimage = () => {
                 <div className="text-center lg:text-right space-y-8 order-1 lg:order-2 z-20">
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
-                        <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                        <Star className="w-5 h-5 fill-yellow-400 text-secondary" />
                         <span className="text-sm font-medium">  انتخاب مطمئن </span>
                     </div>
 
@@ -158,7 +158,7 @@ const Heroimage = () => {
 
                     {/* CTA Button */}
                     <div className="flex justify-center ">
-                        <button className="bg-primary text-secondary px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 hover:from-green-300 hover:to-cyan-300">
+                        <button className="bg-primary text-secondary border border-white/20 px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 ">
                             مشاوره رایگان
                         </button>
                     </div>

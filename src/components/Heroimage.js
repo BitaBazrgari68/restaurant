@@ -158,7 +158,7 @@ const Heroimage = () => {
 
                     {/* CTA Button */}
                     <div className="flex justify-center ">
-                        <button className="bg-primary text-secondary border border-white/20 px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 ">
+                        <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-white/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 ">
                             مشاوره رایگان
                         </button>
                     </div>

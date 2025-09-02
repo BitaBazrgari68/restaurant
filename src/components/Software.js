@@ -114,7 +114,7 @@ const Software = () => {
   transition-all duration-300 group-hover:scale-110
   relative
                     `}>
-                        <div className="absolute inset-1 rounded-full border-1 border-dashed border-white/30"></div>
+                        <div className="absolute inset-1 rounded-full border-1 border-dashed border-[#FFAC30]/30"></div>
                                             <IconComponent className={`w-8 h-8 bg-gradient-to-r ${software.color} bg-clip-text text-secondary`} />
                                         </div>
 
@@ -137,6 +137,7 @@ const Software = () => {
                       hover:shadow-lg hover:shadow-blue-200 
                       transition-all duration-300 transform hover:scale-105
                       flex items-center justify-center gap-2 group
+                      relative before:absolute before:inset-1 before:rounded-xl before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none
                     `}>
                                             مشاهده جزئیات
                                             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />

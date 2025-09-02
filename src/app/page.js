@@ -17,11 +17,12 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50" dir="rtl">
         <Header />
         <Heroimage />
-        <Software/>
+        <Software />
         <Services />
         <Stats />
         <Start />
         <Footer />
+        
       </div>
     </>
 

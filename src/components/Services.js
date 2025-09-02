@@ -48,7 +48,7 @@ const Services = () => {
                             }
                         ].map((feature, index) => (
                             <div key={index} className="group p-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                                <div className="w-16 h-16 bg-gradient-to-br from-[#243954] to-slate-500 rounded-2xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-16 h-16 bg-gradient-to-br from-[#243954] to-slate-500 rounded-2xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform duration-300 relative before:absolute before:inset-1 before:rounded-2xl before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
                                     {feature.icon}
                                 </div>
                                 <h3 className="text-xl font-semibold  text-secondary mb-3">{feature.title}</h3>

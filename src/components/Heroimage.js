@@ -48,7 +48,7 @@ const Heroimage = () => {
 
 
     return (
-        <div className="min-h-screen relative overflow-hidden bgHero mx-6">
+        <div className="min-h-screen relative overflow-hidden bgHero ">
             <div className="absolute inset-0 bg-[#243954]/50 "></div> 
         
             <div className="container mx-auto px-4 py-12 grid lg:grid-cols-2 gap-10 items-center min-h-screen z-10 ">
@@ -144,11 +144,11 @@ const Heroimage = () => {
                 {/* Right Side - Content */}
                 <div className="text-center lg:text-right space-y-8 order-1 lg:order-2 z-20">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+                    <div className="relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/50 before:pointer-events-none inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
                         <Star className="w-5 h-5 fill-yellow-400 text-secondary" />
                         <span className="text-sm font-medium">  انتخاب مطمئن </span>
                     </div>
-
+                    
                     {/* Main Title */}
                     <div className="space-y-4">
                         <h1 className="text-5xl font-semibold text-white leading-tight">
@@ -158,7 +158,7 @@ const Heroimage = () => {
 
                     {/* CTA Button */}
                     <div className="flex justify-center ">
-                        <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-white/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 ">
+                        <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 ">
                             مشاوره رایگان
                         </button>
                     </div>

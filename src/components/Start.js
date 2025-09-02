@@ -13,7 +13,7 @@ const Start = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                        <button className="bg-primary text-secondary px-8 py-4 rounded-2xl  text-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+                        <button className="bg-primary text-secondary px-8 py-4 rounded-2xl  text-xl hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 relative before:absolute before:inset-1 before:rounded-2xl before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
                             <span> شما هم به ترادا بپیوندید .... </span>
                             <ArrowLeft size={20} />
                         </button>

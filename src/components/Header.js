@@ -193,7 +193,7 @@ const Header = () => {
     };
 
     return (
-        <nav className="relative bg-[#FFAC30] shadow-lg mb-1 overflow-visible" dir="rtl">
+        <nav className="relative bg-[#FFAC30] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)] mb-1 overflow-visible" dir="rtl">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="flex items-center justify-between h-24">
                     <div className="flex-shrink-0">
@@ -258,11 +258,11 @@ const Header = () => {
 
                     <div className="block">
                         <button className=" px-6 py-2 border-1 border-[#243954] text-[#243954] rounded-lg ml-2 text-sm font-medium">
-                            <Link href="/">
+                            <Link href="/signin">
                                 ورود
                             </Link>
                         </button>
-                        <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-white/30 before:pointer-events-none">
+                        <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
                             <Link href="/">
                                 دموی رایگان
                             </Link>

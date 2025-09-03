@@ -3,9 +3,10 @@ import { Users, Shield, Smartphone, Cloud, BarChart3, Clock } from 'lucide-react
 const Services = () => {
     return (
         <div>
-            <section className="pb-20 pt-10 bg-white">
+            <section className="pb-20  ">
+                
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-16 ">
                         <h2 className="text-4xl font-semibold drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] text-secondary mb-4">
                             چرا ترادا را انتخاب کنید؟
                         </h2>
@@ -14,7 +15,7 @@ const Services = () => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
                                 icon: <Smartphone className="w-8 h-8" />,

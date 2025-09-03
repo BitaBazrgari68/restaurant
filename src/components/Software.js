@@ -69,7 +69,7 @@ const Software = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-4">
+        <div className="min-h-screen pb-20 pt-5 bg-white rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)] mb-14">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className={`text-center mb-16 mt-4 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
@@ -88,7 +88,7 @@ const Software = () => {
                 </div>
 
                 {/* Software Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="flex flex-wrap justify-center gap-6 ">
                     {softwareList.map((software, index) => {
                         const IconComponent = software.icon;
                         return (
@@ -132,7 +132,7 @@ const Software = () => {
 
                                         {/* CTA Button */}
                                         <button className={`
-                      w-full py-3 px-4 rounded-xl font-medium text-sm
+                      w-60 py-3 px-4 rounded-xl font-medium text-sm mx-auto
                       bg-primary text-secondary 
                       hover:shadow-lg hover:shadow-blue-200 
                       transition-all duration-300 transform hover:scale-105

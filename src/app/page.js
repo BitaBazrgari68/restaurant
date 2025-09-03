@@ -14,12 +14,12 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50" dir="rtl">
+      <div className="min-h-screen bg-services" dir="rtl">
         <Header />
         <Heroimage />
         <Software />
         <Services />
-        <Stats />
+    
         <Start />
         <Footer />
         

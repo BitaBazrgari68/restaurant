@@ -96,7 +96,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
-                    <p>&copy; ۲۰۲۵ ماپرا. تمامی حقوق محفوظ است.</p>
+                    <p>&copy; ۲۰۲۵ ترادا . تمامی حقوق محفوظ است . </p>
                 </div>
             </div>
         </footer>

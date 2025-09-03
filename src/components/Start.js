@@ -3,7 +3,7 @@ import { ArrowLeft, Play, Star, Users, TrendingUp, Shield, Smartphone, Cloud, Ba
 const Start = () => {
     return (
         <div>
-            <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+            <section className="py-20 bg-white  rounded-tr-[15vw] overflow-hidden z-10 shadow-[inset_0px_25px_50px_-25px_rgba(0,52,119,0.27)] mb-14">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-4xl lg:text-4xl font-semibold  text-secondary mb-6 drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] ">
                         آماده شروع هستید؟

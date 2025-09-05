@@ -30,7 +30,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link';
 import logo from '../../public/images/logoHeader.png'
-const Header = () => {
+const DetailHeader = () => {
     const [activeMenu, setActiveMenu] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null);
@@ -41,89 +41,7 @@ const Header = () => {
             icon: <Home className="w-4 h-4" />,
             href: '/'
         },
-        {
-            title: 'نرم افزار ها',
-            icon: <FolderCode className="w-4 h-4" />,
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        title: 'نرم افزار رستوران و فست فود',
-                        icon: <Utensils  className="w-5 h-5 text-blue-600" />,
-                    },
-                    {
-                        title: '   نرم افزار تشخیص هوشمند پلاک خودرو  ',
-                        icon: <ScanText  className="w-5 h-5 text-green-600" />,
-                    },
-                    {
-                        title: ' نرم افزار کافی شاپ ',
-                        icon: <Coffee  className="w-5 h-5 text-purple-600" />,
-                    },
-                    {
-                        title: ' نرم افزار جامع فروش و حسابداری ',
-                        icon: <Calculator  className="w-5 h-5 text-orange-600" />,
-                    },
-                    {
-                        title: ' اتوماسیون جامع کانبان ',
-                        icon: <Workflow  className="w-5 h-5 text-orange-600" />,
-                    },
-                    {
-                        title: ' نرم افزار انبار شناور ',
-                        icon: <Warehouse  className="w-5 h-5 text-orange-600" />,
-                    },
-                    {
-                        title: ' سامانه مدیریت سفارش گیری و توزین بتن و آسفالت ',
-                        icon: <Warehouse  className="w-5 h-5 text-orange-600" />,
-                    }
-                ]
-            }
-        },
-        {
-            title: ' افزونه ها ',
-            icon: <Puzzle  className="w-4 h-4" />,
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        title: 'رستوران‌ها',
-                        icon: <UtensilsCrossed className="w-5 h-5 text-red-600" />,
-                        items: [
-                            { title: 'رستوران فاین داینینگ', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/fine-dining' },
-                            { title: 'رستوران خانوادگی', icon: <Users className="w-4 h-4" />, href: '/family-restaurant' },
-                            { title: 'رستوران سنتی', icon: <Home className="w-4 h-4" />, href: '/traditional' }
-                        ]
-                    },
-                    {
-                        title: 'کافی شاپ‌ها',
-                        icon: <Coffee className="w-5 h-5 text-amber-600" />,
-                        items: [
-                            { title: 'کافی شاپ', icon: <Coffee className="w-4 h-4" />, href: '/coffee-shop' },
-                            { title: 'کافه رستوران', icon: <Store className="w-4 h-4" />, href: '/cafe-restaurant' },
-                            { title: 'کافه بوک', icon: <FileText className="w-4 h-4" />, href: '/book-cafe' }
-                        ]
-                    },
-                    {
-                        title: 'فست فود',
-                        icon: <ShoppingCart className="w-5 h-5 text-yellow-600" />,
-                        items: [
-                            { title: 'فست فود', icon: <ShoppingCart className="w-4 h-4" />, href: '/fast-food' },
-                            { title: 'پیتزا', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/pizza' },
-                            { title: 'ساندویچی', icon: <Store className="w-4 h-4" />, href: '/sandwich' }
-                        ]
-                    },
-                    {
-                        title: 'سایر',
-                        icon: <Store className="w-5 h-5 text-indigo-600" />,
-                        items: [
-                            { title: 'فودکورت', icon: <Store className="w-4 h-4" />, href: '/food-court' },
-                            { title: 'کترینگ', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/catering' },
-                            { title: 'تک شعبه', icon: <MapPin className="w-4 h-4" />, href: '/single-branch' },
-                            { title: 'زنجیره‌ای', icon: <Globe className="w-4 h-4" />, href: '/chain' }
-                        ]
-                    }
-                ]
-            }
-        },
+        
         
         
         {
@@ -167,12 +85,8 @@ const Header = () => {
                     }
                 ]
             }
-        },
-        {
-            title: 'بلاگ',
-            icon: <FileText className="w-4 h-4" />,
-            href: '/blog'
         }
+        
     ];
 
     const handleMouseEnter = (index) => {
@@ -257,15 +171,9 @@ const Header = () => {
                     </div>
 
                     <div className="block">
-                        <button className=" px-6 py-2 border-1 border-[#243954] text-[#243954] rounded-lg ml-2 text-sm font-medium">
-                            <Link href="/signin">
-                                ورود
-                            </Link>
-                        </button>
-                        <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
-                            <Link href="/">
-                                دموی رایگان
-                            </Link>
+                        
+                        <button className="bg-primary text-secondary px-6 py-3 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
+                            برای سفارش این نرم افزار تماس بگیررید / 09154064900   
                         </button>
 
                     </div>
@@ -358,4 +266,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default DetailHeader;

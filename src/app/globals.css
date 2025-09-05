@@ -392,7 +392,7 @@ body {
 }
 .content{
   width: 1326px; 
-  height: 828.75px;
+  height: 750px;
    display: block;
 }
 
@@ -632,7 +632,7 @@ body {
 
 
 .whyMupra {
-    margin: 30px auto 5px;
+    margin: 30px auto 0px;
 }
 .whyMupra h2 {
     font-weight: 900;

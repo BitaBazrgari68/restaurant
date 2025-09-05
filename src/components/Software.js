@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Utensils, Camera, Coffee, Calculator, BarChart3, Package, Truck, ChevronRight, Star, Zap } from 'lucide-react';
-
+import Link from 'next/link';
 const Software = () => {
     const [hoveredCard, setHoveredCard] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -12,9 +12,10 @@ const Software = () => {
     const softwareList = [
         {
             id: 1,
-            title: 'نرم افزار رستوران و فست فود',
+            title: 'نرم افزار مدیریت رستوران و کافه',
             icon: Utensils,
             description: 'مدیریت کامل رستوران، سفارش گیری و فروش',
+            link: '/RestaurantManagement',
             color: 'from-red-500 to-orange-500',
             bgColor: 'bg-primary',
         },
@@ -23,6 +24,7 @@ const Software = () => {
             title: 'تشخیص هوشمند پلاک خودرو',
             icon: Camera,
             description: 'شناسایی و تشخیص خودکار پلاک خودروها',
+            link: '/IntelligentLicensePlateRecognition',
             color: 'from-blue-500 to-cyan-500',
             bgColor: 'bg-primary',
         },
@@ -31,6 +33,7 @@ const Software = () => {
             title: 'نرم افزار کافی شاپ',
             icon: Coffee,
             description: 'سیستم مدیریت کامل برای کافی شاپ ها',
+            link: '/CoffeeShopSoftware',
             color: 'from-amber-500 to-yellow-500',
             bgColor: 'bg-primary',
         },
@@ -39,6 +42,7 @@ const Software = () => {
             title: 'نرم افزار جامع فروش و حسابداری',
             icon: Calculator,
             description: 'سیستم کامل فروش، خرید و مدیریت مالی',
+            link: '/ComprehensiveSalesAndAccountingSoftware',
             color: 'from-green-500 to-emerald-500',
             bgColor: 'bg-primary',
         },
@@ -47,6 +51,7 @@ const Software = () => {
             title: 'اتوماسیون جامع کانبان',
             icon: BarChart3,
             description: 'سیستم مدیریت پروژه و کارآیی تیم',
+            link: '/ComprehensiveKanbanAutomation',
             color: 'from-purple-500 to-indigo-500',
             bgColor: 'bg-primary',
         },
@@ -55,6 +60,7 @@ const Software = () => {
             title: 'نرم افزار انبار شناور',
             icon: Package,
             description: 'مدیریت انبار و موجودی در محیط های متحرک',
+            link: '/RestaurantManagement',
             color: 'from-teal-500 to-cyan-500',
             bgColor: 'bg-primary',
         },
@@ -63,6 +69,7 @@ const Software = () => {
             title: 'مدیریت سفارش گیری و توزین بتن و آسفالت',
             icon: Truck,
             description: 'سامانه جامع مدیریت و توزیع مصالح ساختمانی',
+            link: '/ManagementOfOrderingAndWeighingOfConcreteAndAsphalt',
             color: 'from-gray-600 to-slate-600',
             bgColor: 'bg-primary',
         }
@@ -114,7 +121,7 @@ const Software = () => {
   transition-all duration-300 group-hover:scale-110
   relative
                     `}>
-                        <div className="absolute inset-1 rounded-full border-1 border-dashed border-[#FFAC30]/30"></div>
+                                            <div className="absolute inset-1 rounded-full border-1 border-dashed border-[#FFAC30]/30"></div>
                                             <IconComponent className={`w-8 h-8 bg-gradient-to-r ${software.color} bg-clip-text text-secondary`} />
                                         </div>
 
@@ -131,7 +138,8 @@ const Software = () => {
 
 
                                         {/* CTA Button */}
-                                        <button className={`
+                                        <Link href={software.link}>
+                                            <button className={`
                       w-60 py-3 px-4 rounded-xl font-medium text-sm mx-auto
                       bg-primary text-secondary 
                       hover:shadow-lg hover:shadow-blue-200 
@@ -139,9 +147,10 @@ const Software = () => {
                       flex items-center justify-center gap-2 group
                       relative before:absolute before:inset-1 before:rounded-xl before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none
                     `}>
-                                            مشاهده جزئیات
-                                            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                                        </button>
+                                                مشاهده جزئیات
+                                                <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                                            </button>
+                                        </Link>
                                     </div>
 
                                     {/* Floating badge */}

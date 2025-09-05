@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Heroimage from '@/components/Heroimage';
 import Footer from '@/components/Footer';
 import Services from '@/components/Services';
-import Stats from '@/components/Stats';
 import Start from '@/components/Start';
 import Software from '@/components/Software';
 

@@ -1,7 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-
+import logo from '../../../public/images/logo.png'
+import Image from 'next/image'
+import { MapPin, Phone, Globe, Shield, Search, Code } from 'lucide-react'
 const Signin = () => {
     const [formData, setFormData] = useState({
         firstName: '',
@@ -42,7 +44,7 @@ const Signin = () => {
             newErrors.lastName = 'نام خانوادگی الزامی است';
         }
 
-        
+
         if (!formData.phone.trim()) {
             newErrors.phone = 'شماره موبایل الزامی است';
         } else if (!/^09\d{9}$/.test(formData.phone)) {
@@ -103,25 +105,19 @@ const Signin = () => {
     };
 
     return (<>
-        
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4" dir="rtl">
+
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex py-4 px-24 " dir="rtl">
 
             {/* کانتینر اصلی */}
-            <div className="w-full max-w-md">
-
-
-
+            <div className=" flex-1 min-h-screen">
                 {/* کارت فرم */}
-                <div className="bg-white/90  backdrop-blur-sm rounded-2xl shadow-[0_4px_6px_-1px_rgba(0,0,0,0.25)] p-8 relative overflow-hidden">
-
+                <div className="bg-white/90 rounded-br-2xl rounded-tr-2xl  backdrop-blur-sm  shadow-[0_4px_6px_-1px_rgba(0,0,0,0.25)] p-8 relative overflow-hidden">
                     {/* هدر */}
                     <div className="text-center mb-8 relative z-10">
                         <h1 className="text-3xl font-bold text-gray-800 mb-2">ثبت نام</h1>
                     </div>
-
                     {/* فیلدهای فرم */}
                     <div className="space-y-4 relative z-10">
-
                         {/* نام و نام خانوادگی */}
                         <div className="grid grid-cols-2 gap-4">
                             <div>
@@ -162,9 +158,6 @@ const Signin = () => {
                                 )}
                             </div>
                         </div>
-
-                        
-
                         {/* شماره موبایل */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-2 text-right">
@@ -184,7 +177,6 @@ const Signin = () => {
                                 <p className="text-red-500 text-xs mt-1 text-right">{errors.phone}</p>
                             )}
                         </div>
-
                         {/* رمز عبور */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-2 text-right">
@@ -204,7 +196,6 @@ const Signin = () => {
                                 <p className="text-red-500 text-xs mt-1 text-right">{errors.password}</p>
                             )}
                         </div>
-
                         {/* تکرار رمز عبور */}
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-2 text-right">
@@ -224,7 +215,6 @@ const Signin = () => {
                                 <p className="text-red-500 text-xs mt-1 text-right">{errors.confirmPassword}</p>
                             )}
                         </div>
-
                         {/* چک باکس قوانین */}
                         <div className="flex items-start gap-3">
                             <input
@@ -244,7 +234,6 @@ const Signin = () => {
                         {errors.terms && (
                             <p className="text-red-500 text-xs text-right">{errors.terms}</p>
                         )}
-
                         {/* دکمه ثبت نام */}
                         <button
                             onClick={handleSubmit}
@@ -256,7 +245,6 @@ const Signin = () => {
                         >
                             {isLoading ? 'در حال ثبت نام...' : 'ثبت نام'}
                         </button>
-
                         {/* لینک ورود */}
                         <div className="text-center mt-6">
                             <p className="text-sm text-gray-600">
@@ -269,18 +257,56 @@ const Signin = () => {
 
                     </div>
                 </div>
+            </div>
+            <div className='flex flex-col justify-center items-center min-h-screen flex-1 bg-primary rounded-tl-2xl rounded-bl-2xl backdrop-blur-sm  shadow-[0_4px_6px_-1px_rgba(0,0,0,0.25)]'>
+                <Image
+                    src={logo}
+                    width={250}
+                    height={250}
+                    alt="dataTrada"
+                   
+                />
+                <h1 className='text-2xl font-semibold text-secondary'>
+                    هلدینگ دیتا ترادا
+                </h1>
 
-                {/* فوتر */}
-                <div className="text-center mt-6">
-                    <p className="text-xs text-gray-500">
-                        با ثبت نام، شما با تمامی قوانین سایت موافقت می‌کنید
-                    </p>
+                <ul className='text-white list-none p-5 space-y-3'>
+                    <li className='flex items-center space-x-3 space-x-reverse'>
+                        <Globe className="w-5 h-5 text-blue-400" />
+                        <span>طراحی و تولید سایت</span>
+                    </li>
+                    <li className='flex items-center space-x-3 space-x-reverse'>
+                        <Search className="w-5 h-5 text-green-400" />
+                        <span>سئو</span>
+                    </li>
+                    <li className='flex items-center space-x-3 space-x-reverse'>
+                        <Shield className="w-5 h-5 text-red-400" />
+                        <span>امنیت</span>
+                    </li>
+                    <li className='flex items-center space-x-3 space-x-reverse'>
+                        <Code className="w-5 h-5 text-purple-400" />
+                        <span>تولید نرم افزار</span>
+                    </li>
+                </ul>
+
+                <div className='flex flex-col text-white space-y-2'>
+                    <div className='flex items-center space-x-2 space-x-reverse'>
+                        <Phone className="w-4 h-4 text-green-400" />
+                        <span>05136043703</span>
+                    </div>
+                    <div className='flex items-center space-x-2 space-x-reverse'>
+                        <Phone className="w-4 h-4 text-green-400" />
+                        <span>09154064900</span>
+                    </div>
                 </div>
 
+                <div className='flex items-start space-x-2 space-x-reverse text-white mt-4'>
+                    <MapPin className="w-4 h-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className='text-right'>
+                        آدرس : مشهد، بلوار وکیل آباد ، خیابان عدل ، عدل 12
+                    </p>
+                </div>
             </div>
-
-
-
         </div>
     </>
     );

@@ -16,7 +16,7 @@ const Path = () => {
                         <li className="blue">
                             <div className="picture">
                                 <Image
-                                    src="/images/image1.jpg"
+                                    src="/images/image1.webp"
                                     alt='image1'
                                     width={360}
                                     height={398}
@@ -32,7 +32,7 @@ const Path = () => {
                         <li className="green">
                             <div className="picture">
                                 <Image
-                                    src="/images/image1.jpg"
+                                    src="/images/image2.webp"
                                     alt='image1'
                                     width={360}
                                     height={398}
@@ -48,7 +48,7 @@ const Path = () => {
                         <li className="yellow">
                             <div className="picture">
                                 <Image
-                                    src="/images/image1.jpg"
+                                    src="/images/image3.webp"
                                     alt='image1'
                                     width={360}
                                     height={398}
@@ -64,7 +64,7 @@ const Path = () => {
                         <li className="lastblue">
                             <div className="picture">
                                 <Image
-                                    src="/images/image1.jpg"
+                                    src="/images/image4.jpg"
                                     alt='image1'
                                     width={360}
                                     height={398}

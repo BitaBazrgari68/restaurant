@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 export default function PowerPointSlider() {
 
   const totalSlides = 15;
-  const slides = Array.from({ length: totalSlides }, (_, i) => `/slides/slide${i + 1}.png`);
+  const slides = Array.from({ length: totalSlides }, (_, i) => `/slides/Slide${i + 1}.png`);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(false);

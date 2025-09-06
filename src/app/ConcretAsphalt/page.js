@@ -1,10 +1,10 @@
-import Concret-Asphalt from '@/components/template/Concret-Asphalt';
+import ConcretAsphalt from '@/components/template/ConcretAsphalt';
 import React from 'react';
 
 const Page = () => {
     return (
         <div>
-            <Concret-Asphalt/>
+            <ConcretAsphalt/>
         </div>
     );
 }

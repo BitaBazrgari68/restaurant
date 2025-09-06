@@ -5,7 +5,7 @@ import logo from '../../public/images/logo.png'
 const Footer = () => {
     return (
         <footer className="bg-primary text-white py-12 footer relative mt-20">
-            <div className="socialmedia">
+            <div className="hidden md:block socialmedia">
                 <i className="common-icon common-icon-socialmediaicon"></i>
                 <div>
                     <span className="t1">برای اطلاع از تخفیف ها و جدیدترین خبر ها</span>

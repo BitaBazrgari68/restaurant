@@ -1,12 +1,12 @@
-
 import React from 'react';
 import Path from '@/components/Path';
-import Tab from '@/components/Tab';
 import DetailHeader from '../DetailHeader';
 import Footer from '../Footer';
 import Link from 'next/link';
 import { ScanText, Workflow, Phone, Coffee, Calculator, Warehouse, ChevronLeft } from 'lucide-react';
-const RestaurantManagement = () => {
+import PowerPointSlider from '../PowerPointSlider';
+
+const ConcretAsphalt = () => {
     const relatedSoftware = [
         {
             id: 1,
@@ -40,8 +40,8 @@ const RestaurantManagement = () => {
         },
         {
             id: 6,
-            name: " سامانه مدیریت سفارش گیری و توزین بتن و آسفالت ",
-            slug: "Concret-Asphalt",
+            name: " نرم افزار مدیریت رستوران و کافه ",
+            slug: "RestaurantManagement",
             icon: <Warehouse className="w-5 h-5 text-orange-600" />
         },
 
@@ -51,7 +51,7 @@ const RestaurantManagement = () => {
             <DetailHeader />
             <div className='pt-16 pr-24 flex gap-3'>
                 <h1 className='text-2xl font-semibold text-[#243954] bg-[#FFAC30] p-5 rounded-lg relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#243954]/50 before:pointer-events-none '>
-                    نرم افزار مدیریت رستوران و کافه
+                    مدیریت سفارش گیری و توزین بتن و آسفالت
                 </h1>
                 <h2 className='text-lg font-semibold text-[#243954] bg-[#FFAC30] p-5 rounded-lg relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#243954]/50 before:pointer-events-none '>
                     <Link href="/">
@@ -63,13 +63,13 @@ const RestaurantManagement = () => {
                     سفارش نرم افزار / 09154064900 <Phone className="w-4 h-4  text-[#243954]" />
                 </h2>
             </div>
-            <Path />
-            <Tab />
+            
+            <PowerPointSlider/>
             <div className='pb-5'>
                 <div className="container mx-auto px-6 pb-20">
                     {/* Header */}
                     <div className="mb-6">
-                        <h3 className="text-2xl font-bold text-[#243954] mb-2">
+                        <h3 className="text-2xl font-semibold text-[#243954] mb-2">
                             سایر نرم‌افزارها
                         </h3>
                         <div className="w-12 h-1 bg-[#FFAC30] rounded-full"></div>
@@ -99,4 +99,4 @@ const RestaurantManagement = () => {
     );
 }
 
-export default RestaurantManagement;
+export default ConcretAsphalt;

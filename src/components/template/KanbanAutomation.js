@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ComprehensiveKanbanAutomation = () => {
+const KanbanAutomation = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const ComprehensiveKanbanAutomation = () => {
     );
 }
 
-export default ComprehensiveKanbanAutomation;
+export default KanbanAutomation;

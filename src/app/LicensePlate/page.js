@@ -1,10 +1,10 @@
-import CoffeeShopSoftware from '@/components/template/CoffeeShopSoftware';
+import LicensePlate from '@/components/template/LicensePlate';
 import React from 'react';
 
 const Page = () => {
     return (
         <div>
-            <CoffeeShopSoftware/>
+            <LicensePlate/>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FloatingWarehouseSoftware = () => {
+const CoffeeShop = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const FloatingWarehouseSoftware = () => {
     );
 }
 
-export default FloatingWarehouseSoftware;
+export default CoffeeShop;

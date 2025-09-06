@@ -8,21 +8,21 @@ export default function PowerPointSlider() {
 
   const totalSlides = 15;
   const slides = [
-  '/slides/Slide1.png',
-  '/slides/Slide2.png', 
-  '/slides/Slide3.png',
-  '/slides/Slide4.png',
-  '/slides/Slide5.png',
-  '/slides/Slide6.png',
-  '/slides/Slide7.png',
-  '/slides/Slide8.png',
-  '/slides/Slide9.png',
-  '/slides/Slide10.png',
-  '/slides/Slide11.png',
-  '/slides/Slide12.png',
-  '/slides/Slide13.png',
-  '/slides/Slide14.png',
-  '/slides/Slide15.png'];
+  '/slides/Slide1.PNG',
+  '/slides/Slide2.PNG', 
+  '/slides/Slide3.PNG',
+  '/slides/Slide4.PNG',
+  '/slides/Slide5.PNG',
+  '/slides/Slide6.PNG',
+  '/slides/Slide7.PNG',
+  '/slides/Slide8.PNG',
+  '/slides/Slide9.PNG',
+  '/slides/Slide10.PNG',
+  '/slides/Slide11.PNG',
+  '/slides/Slide12.PNG',
+  '/slides/Slide13.PNG',
+  '/slides/Slide14.PNG',
+  '/slides/Slide15.PNG'];
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(false);

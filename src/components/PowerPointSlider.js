@@ -1,11 +1,28 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import Image from 'next/image'
+
 
 export default function PowerPointSlider() {
 
   const totalSlides = 15;
-  const slides = Array.from({ length: totalSlides }, (_, i) => `/slides/Slide${i + 1}.png`);
+  const slides = [
+  '/slides/Slide1.png',
+  '/slides/Slide2.png', 
+  '/slides/Slide3.png',
+  '/slides/Slide4.png',
+  '/slides/Slide5.png',
+  '/slides/Slide6.png',
+  '/slides/Slide7.png',
+  '/slides/Slide8.png',
+  '/slides/Slide9.png',
+  '/slides/Slide10.png',
+  '/slides/Slide11.png',
+  '/slides/Slide12.png',
+  '/slides/Slide13.png',
+  '/slides/Slide14.png',
+  '/slides/Slide15.png'];
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(false);

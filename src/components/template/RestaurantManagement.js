@@ -23,7 +23,7 @@ const RestaurantManagement = () => {
         {
             id: 3,
             name: " نرم افزار جامع فروش و حسابداری ",
-            slug: " Accounting ",
+            slug: "Accounting ",
             icon: <Calculator className="w-5 h-5 text-orange-600" />
         },
         {

@@ -5,6 +5,7 @@ import Footer from '../Footer';
 import Link from 'next/link';
 import { ScanText, Workflow, Phone, Coffee, Calculator, Warehouse, ChevronLeft } from 'lucide-react';
 import PowerPointSlider from '../PowerPointSlider';
+import About from '../About';
 
 const ConcretAsphalt = () => {
     const relatedSoftware = [
@@ -65,6 +66,7 @@ const ConcretAsphalt = () => {
             </div>
             
             <PowerPointSlider/>
+            <About/>
             <div className='pb-5'>
                 <div className="container mx-auto px-6 pb-20">
                     {/* Header */}

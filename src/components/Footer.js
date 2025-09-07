@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import logo from '../../public/images/logo.png'
+import enamad from '../../public/images/enamad.png'
 const Footer = () => {
     return (
         <footer className="bg-primary text-white py-12 footer relative mt-20">
@@ -46,8 +47,8 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-                <div className="grid md:grid-cols-4 gap-8">
-                    <div>
+                <div className="grid md:grid-cols-5 gap-8 ">
+                    <div className='mx-auto'>
                         <div className="flex items-center gap-3 mb-4">
                             <div className=" rounded-xl flex items-center justify-center">
                                 <Image
@@ -57,14 +58,14 @@ const Footer = () => {
                                     alt="Picture of the author"
                                 />
                             </div>
-                            
+
                         </div>
                         <p className="text-gray-400 leading-relaxed">
-                            نرم افزارهای هوشمند ترادا 
+                            نرم افزارهای هوشمند ترادا
                         </p>
                     </div>
 
-                    <div>
+                    <div className='mx-auto'>
                         <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">محصولات</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#" className="hover:text-white transition-colors">نرم‌افزار صندوق</a></li>
@@ -74,7 +75,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className='mx-auto'>
                         <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">شرکت</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#" className="hover:text-white transition-colors">درباره ما</a></li>
@@ -84,7 +85,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className='mx-auto'>
                         <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">پشتیبانی</h3>
                         <ul className="space-y-2 text-gray-400">
                             <li><a href="#" className="hover:text-white transition-colors">مرکز راهنمایی</a></li>
@@ -92,6 +93,14 @@ const Footer = () => {
                             <li><a href="#" className="hover:text-white transition-colors">آموزش</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">وضعیت سرویس</a></li>
                         </ul>
+                    </div>
+                    <div className='mx-auto'>
+                        <Image
+                            src={enamad}
+                            width={170}
+                            height={130}
+                            alt="Picture of the author"
+                        />
                     </div>
                 </div>
 

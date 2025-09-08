@@ -49,20 +49,23 @@ const RestaurantManagement = () => {
     return (
         <div>
             <DetailHeader />
-            <div className='pt-16 pr-24 flex gap-3'>
-                <h1 className='text-2xl font-semibold text-[#243954] bg-[#FFAC30] p-5 rounded-lg relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#243954]/50 before:pointer-events-none '>
+            <div className='pt-16 px-24 mb-5  gap-3 bg-white'>
+                <div className=' flex justify-between items-center w-full rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)]'>
+                    <h1 className=' flex items-center pr-8 text-4xl font-semibold drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] text-secondary   '>
+                        <span> / </span>
                     نرم افزار مدیریت رستوران و کافه
-                </h1>
-                <h2 className='text-lg font-semibold text-[#243954] bg-[#FFAC30] p-5 rounded-lg relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#243954]/50 before:pointer-events-none '>
-                    <Link href="/">
-                        دموی نرم افزار
-                    </Link>
+                        <span>/ </span>
+                    </h1>
 
-                </h2>
-                <h2 className=' flex gap-2 items-center text-lg font-semibold text-[#243954] bg-[#FFAC30] p-5 rounded-lg relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#243954]/50 before:pointer-events-none '>
-                    سفارش نرم افزار / 09154064900 <Phone className="w-4 h-4  text-[#243954]" />
-                </h2>
+                    <h2 className=' flex gap-2 items-center justify-center  text-lg font-semibold text-[#124435]  p-5  '>
+                        سفارش نرم افزار / 09154064900 <Phone className="w-4 h-4  text-[#124435]" />
+                    </h2>
+                </div>
             </div>
+
+
+
+            
             <Path />
             <Tab />
             <div className='pb-5'>

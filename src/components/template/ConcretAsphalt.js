@@ -52,7 +52,7 @@ const ConcretAsphalt = () => {
             <DetailHeader />
             <div className='pt-16 px-24 mb-5  gap-3 bg-white'>
                 <div className=' flex justify-between items-center w-full rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)]'>
-                    <h1 className='text-2xl font-semibold flex items-center text-[#243954] pr-8   '>
+                    <h1 className=' flex items-center pr-8 text-4xl font-semibold drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] text-secondary   '>
                         <span> / </span>
                         مدیریت سفارش گیری و توزین بتن و آسفالت
                         <span>/ </span>

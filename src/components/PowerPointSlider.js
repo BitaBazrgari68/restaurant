@@ -53,7 +53,7 @@ export default function PowerPointSlider() {
   return (
     <div className="max-w-6xl mx-auto p-6 bg-white pb-10">
       {/* هدر */}
-      <div className="mb-6">
+      <div className="my-8 flex flex-col items-center justify-center">
         <h3 className="text-2xl font-semibold text-[#243954] mb-2">
           معرفی نرم افزار
         </h3>

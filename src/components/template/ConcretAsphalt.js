@@ -70,11 +70,11 @@ const ConcretAsphalt = () => {
             <div className='pb-5'>
                 <div className="container mx-auto px-6 pb-20">
                     {/* Header */}
-                    <div className="mb-6">
+                    <div className="my-8 flex flex-col items-center justify-center">
                         <h3 className="text-2xl font-semibold text-[#243954] mb-2">
                             سایر نرم‌افزارها
                         </h3>
-                        <div className="w-12 h-1 bg-[#FFAC30] rounded-full"></div>
+                        <div className="w-12 h-1 bg-[#FFAC30] rounded-full "></div>
                     </div>
 
                     {/* Software List */}

@@ -3,18 +3,18 @@ export default function About() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-6">
             <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-slate-800 mb-4">
+                <div className="my-8 flex flex-col items-center justify-center">
+                    <h1 className="text-2xl font-semibold text-[#243954] mb-4">
                         امکانات اختصاصی نرم‌افزار تولید و فروش بتن
                     </h1>
-                    <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-[#FFAC30] rounded-full"></div>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8">
                     {/* ستون اول - امکانات اصلی */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
                                 ۱
                             </div>
                             امکانات تعاریف و ثبت اطلاعات
@@ -41,8 +41,8 @@ export default function About() {
 
                     {/* ستون دوم - مدیریت بارنامه */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
                                 ۲
                             </div>
                             مدیریت بارنامه بتن
@@ -73,8 +73,8 @@ export default function About() {
 
                     {/* طراحی و قابلیت‌های پیشرفته */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
                                 ۳
                             </div>
                             طراحی و قابلیت‌های پیشرفته
@@ -101,8 +101,8 @@ export default function About() {
 
                     {/* محاسبات مالی */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
                                 ۴
                             </div>
                             محاسبات مالی
@@ -129,8 +129,8 @@ export default function About() {
 
                     {/* فاکتورسازی */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
                                 ۵
                             </div>
                             مدیریت فاکتور
@@ -157,8 +157,8 @@ export default function About() {
 
                     {/* امکانات حسابداری */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
                                 ۶
                             </div>
                             امکانات حسابداری
@@ -185,9 +185,9 @@ export default function About() {
 
                     {/* گزارشات */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
-                                📊
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
+                                ۷ 
                             </div>
                             گزارشات جامع
                         </h2>
@@ -212,42 +212,47 @@ export default function About() {
                     </div>
 
                     {/* آزمایشگاه */}
-                    <div className="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8 ">
-                        <h2 className="text-3xl font-bold mb-6 text-right">مدیریت آزمایشگاه و کیفیت</h2>
+                    <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 ">
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-amber-900 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
+                                ۸  
+                            </div>
+                            مدیریت آزمایشگاه و کیفیت
+                        </h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             <ul className="space-y-3">
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">تعریف الگوهای نمونه‌برداری برای هر کارخانه</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">نمونه‌برداری خودکار از بارنامه‌های بتن</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">پیوست عکس پروژه‌ها برای ثبت آزمایش</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">تولید خودکار لیبل آزمونه‌ها</span>
                                 </li>
                             </ul>
                             <ul className="space-y-3">
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">داشبورد هشدارهای روزانه</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">ارسال پیامک به مشتری برای دریافت شیت</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">ذخیره شیت در فرمت‌های مختلف</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <div className="w-2 h-2 bg-white rounded-full mt-2 ml-3 flex-shrink-0"></div>
+                                    <div className="w-2 h-2 bg-amber-900 rounded-full mt-2 ml-3 flex-shrink-0"></div>
                                     <span className="leading-relaxed">یادآوری سرسید شکست آزمونه‌ها</span>
                                 </li>
                             </ul>
@@ -256,9 +261,9 @@ export default function About() {
 
                     {/* سیستم پیام‌رسان */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
-                                📱
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
+                                ۹
                             </div>
                             سیستم پیام‌رسان SMS
                         </h2>
@@ -288,9 +293,9 @@ export default function About() {
 
                     {/* سیستم پلاک‌خوان */}
                     <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center">
-                            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white text-lg font-bold ml-3">
-                                🚛
+                        <h2 className="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+                            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white text-lg font-semibold ml-3">
+                                ۱۰ 
                             </div>
                             سیستم پلاک‌خوان هوشمند
                         </h2>

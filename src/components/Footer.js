@@ -22,7 +22,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/channel/mupra" target="_blank" rel="nofollow" title="یوتیوب" className="youtube">
+                        <a href="/" target="_blank" rel="nofollow" title="یوتیوب" className="youtube">
                             <i className="common-icon common-icon-social-youtube">
 
                             </i>
@@ -30,17 +30,17 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/mupra.ir" target="_blank" rel="nofollow" title="ایسنتاگرام" className="instagram">
+                        <a href="https://www.instagram.com/data_trada" target="_blank" rel="nofollow" title="ایسنتاگرام" className="instagram">
                             <i className="common-icon common-icon-social-instagram"></i>
                             ایسنتاگرام</a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/mupra_ir" target="_blank" rel="nofollow" title="توییتر" className="twitter">
+                        <a href="/" target="_blank" rel="nofollow" title="توییتر" className="twitter">
                             <i className="common-icon common-icon-Twitter"></i>
                             توییتر</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/mupra" target="_blank" rel="nofollow" title="لینکدین" className="linkedin">
+                        <a href="/" target="_blank" rel="nofollow" title="لینکدین" className="linkedin">
                             <i className="common-icon common-icon-social-linkedin"></i>
                             لینکدین</a>
                     </li>
@@ -68,10 +68,10 @@ const Footer = () => {
                     <div className='mx-auto'>
                         <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">محصولات</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">نرم‌افزار صندوق</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">منو دیجیتال</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">باشگاه مشتریان</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">سیستم آشپزخانه</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">نرم افزارها</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors"> سئو</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors"> طراحی سایت</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors"> امنیت</a></li>
                         </ul>
                     </div>
 

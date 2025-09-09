@@ -48,32 +48,39 @@ const Header = () => {
             submenu: {
                 columns: [
                     {
-                        title: 'نرم افزار رستوران و فست فود',
+                        title: 'نرم افزار رستوران و  کافه',
                         icon: <Utensils className="w-5 h-5 text-blue-600" />,
+                        href: '/RestaurantManagement',
                     },
                     {
                         title: '   نرم افزار تشخیص هوشمند پلاک خودرو  ',
                         icon: <ScanText className="w-5 h-5 text-green-600" />,
+                        href: '/LicensePlate',
                     },
                     {
                         title: ' نرم افزار کافی شاپ ',
                         icon: <Coffee className="w-5 h-5 text-purple-600" />,
+                        href: '/CoffeeShop',
                     },
                     {
                         title: ' نرم افزار جامع فروش و حسابداری ',
                         icon: <Calculator className="w-5 h-5 text-orange-600" />,
+                        href: '/Accounting',
                     },
                     {
                         title: ' اتوماسیون جامع کانبان ',
                         icon: <Workflow className="w-5 h-5 text-orange-600" />,
+                        href: '/KanbanAutomation',
                     },
                     {
                         title: ' نرم افزار انبار شناور ',
                         icon: <Warehouse className="w-5 h-5 text-orange-600" />,
+                        href: '/Warehouse',
                     },
                     {
                         title: ' سامانه مدیریت سفارش گیری و توزین بتن و آسفالت ',
                         icon: <Warehouse className="w-5 h-5 text-orange-600" />,
+                        href: '/Concret-Asphalt',
                     }
                 ]
             }
@@ -136,19 +143,19 @@ const Header = () => {
                         title: 'تلفن تماس',
                         icon: <Phone className="w-4 h-4 text-amber-500" />,
                         href: '/contact',
-                       
+
                     },
                     {
                         title: 'ایمیل',
                         icon: <Mail className="w-4 h-4 text-amber-700" />,
                         href: '/email',
-                        
+
                     },
                     {
                         title: 'آدرس',
                         icon: <MapPin className="w-4 h-4 text-fuchsia-600" />,
                         href: '/address',
-                       
+
                     },
                     {
                         title: 'پشتیبانی 7/24',
@@ -216,9 +223,9 @@ const Header = () => {
                                     onMouseEnter={() => item.hasDropdown && handleMouseEnter(index)}
                                     onMouseLeave={() => item.hasDropdown && handleMouseLeave()}
                                 >
-                                    <a
+                                    <Link
                                         href={item.href || '#'}
-                                        className={`flex items-center px-2 lg:px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200 ${activeMenu === index
+                                        className={`flex items-center cursor-pointer px-2 lg:px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200 ${activeMenu === index
                                             ? 'text-blue-600 bg-blue-50'
                                             : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                                             }`}
@@ -229,7 +236,7 @@ const Header = () => {
                                             <ChevronDown className={`mr-1 h-4 w-4 transition-transform duration-200 ${activeMenu === index ? 'rotate-180' : ''
                                                 }`} />
                                         )}
-                                    </a>
+                                    </Link>
 
                                     {item.hasDropdown && activeMenu === index && (
                                         <div className="absolute top-full right-0 bg-white shadow-xl border border-gray-200 rounded-lg  z-50 min-w-lg">
@@ -238,10 +245,14 @@ const Header = () => {
                                                     {item.submenu.columns.map((column, colIndex) => (
                                                         <div key={colIndex} className="space-y-3">
                                                             <div className="flex items-center space-x-2 space-x-reverse pb-2 border-b border-gray-100">
-                                                                <div className="flex-shrink-0">{column.icon}</div>
-                                                                <h3 className="text-sm  font-semibold text-gray-900 whitespace-nowrap">
-                                                                    {column.title}
-                                                                </h3>
+                                                                <Link href={column.href || '#'}
+                                                                target="_blank"
+                                                                className='flex gap-2'>
+                                                                    <div className="flex-shrink-0">{column.icon}</div>
+                                                                    <h3 className="text-sm  font-semibold text-gray-900 whitespace-nowrap">
+                                                                        {column.title}
+                                                                    </h3>
+                                                                </Link>
                                                             </div>
                                                         </div>
                                                     ))}
@@ -283,7 +294,7 @@ const Header = () => {
                     </div>
                 </div>
 
-               
+
 
                 <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
                     <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
@@ -342,7 +353,7 @@ const Header = () => {
                                                                     <p className="text-sm text-gray-700 hover:text-blue-600">
                                                                         {subItem.title}
                                                                     </p>
-                                                                    
+
                                                                 </div>
                                                             </a>
                                                         ))}

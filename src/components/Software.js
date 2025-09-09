@@ -138,9 +138,10 @@ const Software = () => {
 
 
                                         {/* CTA Button */}
-                                        <Link href={software.link}>
+                                        <Link href={software.link}
+                                        target="_blank" >
                                             <button className={`
-                      w-60 py-3 px-4 rounded-xl font-medium text-sm mx-auto
+                      w-60 py-3 px-4 rounded-xl font-medium text-sm mx-auto cursor-pointer
                       bg-primary text-secondary 
                       hover:shadow-lg hover:shadow-blue-200 
                       transition-all duration-300 transform hover:scale-105

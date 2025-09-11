@@ -11,7 +11,7 @@ const Tab = () => {
     };
 
     return (
-        <>
+        
             <div className="whyMupra">
                 <h2> نرم افزار مدیریت رستوران چیست و چگونه رستوران شما را متحول می کند؟   </h2>
                 <p>پلتفرم ابری و یکپارچه؛ همه ابزارهای مورد نیاز شما در یک نرم افزار، با دسترسی از هرجا...</p>
@@ -63,53 +63,53 @@ const Tab = () => {
                     </button>
                 </div>
 
-                <div className="images w-[828.75] relative">
-                    {/* تصاویر order */}
-                    <picture className={`order absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'order' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                <div className="images w-fit h-fit relative">
+                    
+                    <picture className={`order   transition-opacity duration-500 pointer-events-none ${activeTab === 'order' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/payment.webp" type="image/webp" />
                         <img src="/payment.png" width="auto" height="auto" alt="پرداخت" className="pointer-events-none" />
                     </picture>
-                    <picture className={`order absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'order' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    <picture className={`order  transition-opacity duration-500 pointer-events-none ${activeTab === 'order' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/manWithFood.webp" type="image/webp" />
                         <img src="/manWithFood.png" width="auto" height="auto" alt="مرد با غذا" className="pointer-events-none" />
                     </picture>
 
-                    {/* تصاویر preparing */}
-                    <picture className={`preparing absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'preparing' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    
+                    <picture className={`preparing  transition-opacity duration-500 pointer-events-none ${activeTab === 'preparing' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/kds.webp" type="image/webp" />
                         <img src="/kds.png" width="auto" height="auto" alt="سیستم آشپزخانه" className="pointer-events-none" />
                     </picture>
-                    <picture className={`preparing absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'preparing' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    <picture className={`preparing  transition-opacity duration-500 pointer-events-none ${activeTab === 'preparing' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/storage.webp" type="image/webp" />
                         <img src="/storage.png" width="auto" height="auto" alt="انبارداری" className="pointer-events-none" />
                     </picture>
-                    <picture className={`preparing absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'preparing' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    <picture className={`preparing  transition-opacity duration-500 pointer-events-none ${activeTab === 'preparing' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/delivery.webp" type="image/webp" />
                         <img src="/delivery.png" width="auto" height="auto" alt="تحویل" className="pointer-events-none" />
                     </picture>
 
-                    {/* تصاویر payAndSurvey */}
-                    <picture className={`payAndSurvey absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'payAndSurvey' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                  
+                    <picture className={`payAndSurvey  transition-opacity duration-500 pointer-events-none ${activeTab === 'payAndSurvey' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/manWithPhone.webp" type="image/webp" />
                         <img src="/manWithPhone.png" width="auto" height="auto" alt="مرد با تلفن" className="pointer-events-none" />
                     </picture>
-                    <picture className={`payAndSurvey absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'payAndSurvey' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    <picture className={`payAndSurvey  transition-opacity duration-500 pointer-events-none ${activeTab === 'payAndSurvey' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/dine.webp" type="image/webp" />
                         <img src="/dine.png" width="auto" height="auto" alt="غذا خوردن" className="pointer-events-none" />
                     </picture>
 
-                    {/* تصاویر managment */}
-                    <picture className={`managment absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'managment' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    
+                    <picture className={`managment  transition-opacity duration-500 pointer-events-none ${activeTab === 'managment' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/manage.webp" type="image/webp" />
                         <img src="/manage.png" width="auto" height="auto" alt="مدیریت" className="pointer-events-none" />
                     </picture>
-                    <picture className={`managment absolute top-0 left-0 w-full h-full transition-opacity duration-500 pointer-events-none ${activeTab === 'managment' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
+                    <picture className={`managment  transition-opacity duration-500 pointer-events-none ${activeTab === 'managment' ? 'opacity-100 z-10' : 'opacity-30 z-0'}`}>
                         <source srcSet="/manager.webp" type="image/webp" />
                         <img src="/manager.png" width="auto" height="auto" alt="مدیر" className="pointer-events-none" />
                     </picture>
 
-                    <div className="content w-[900] h-[828] block">
-                        {/* محتوای order */}
+                    <div className="content w-fit h-fit block">
+                        
                         <div className={`order desc desc1 desktop ${activeTab === 'order' ? 'active' : 'hidden'}`}>
                             <div className="ripple"></div>
                             <div className="items">
@@ -142,7 +142,7 @@ const Tab = () => {
                             </div>
                         </div>
 
-                        {/* محتوای preparing */}
+                        
                         <div className={`preparing desc desc1 desktop ${activeTab === 'preparing' ? 'active' : 'hidden'}`}>
                             <div className="ripple"></div>
                             <div className="items">
@@ -166,7 +166,7 @@ const Tab = () => {
                             </div>
                         </div>
 
-                        {/* محتوای payAndSurvey */}
+                      
                         <div className={`payAndSurvey desc desc1 ${activeTab === 'payAndSurvey' ? 'active' : 'hidden'}`}>
                             <div className="ripple"></div>
                             <div className="items">
@@ -192,7 +192,7 @@ const Tab = () => {
                             </div>
                         </div>
 
-                        {/* محتوای managment */}
+                       
                         <div className={`managment desc desc1 ${activeTab === 'managment' ? 'active' : 'hidden'}`}>
                             <div className="ripple"></div>
                             <div className="items">
@@ -220,7 +220,7 @@ const Tab = () => {
                     </div>
                 </div>
             </div>
-        </>
+        
     );
 }
 

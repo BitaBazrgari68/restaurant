@@ -68,7 +68,7 @@ const RestaurantManagement = () => {
             
             <Path />
             <Tab />
-            <div className='pb-5'>
+            <div className='my-5'>
                 <div className="container mx-auto px-6 pb-20">
                     {/* Header */}
                     <div className="mb-6">

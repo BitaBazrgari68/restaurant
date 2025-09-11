@@ -5,7 +5,7 @@ import logo from '../../public/images/logo.png'
 import enamad from '../../public/images/enamad.png'
 const Footer = () => {
     return (
-        <footer className="bg-primary text-white py-12 footer relative mt-20">
+        <footer className="bg-primary text-white py-12 footer relative mt-32">
             <div className="hidden md:block socialmedia">
                 <i className="common-icon common-icon-socialmediaicon"></i>
                 <div>
@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 <ul>
                     <li>
-                        <a href="https://www.aparat.com/mupra" title="آپارات" target="_blank" rel="nofollow" className="aparat">
+                        <a href="/" title="آپارات" target="_blank" rel="nofollow" className="aparat">
                             <i className="common-icon common-icon-social-aparat">
 
                             </i>

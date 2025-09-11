@@ -106,10 +106,10 @@ const Signin = () => {
 
     return (<>
 
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex py-4 px-24 " dir="rtl">
+        <div className=" bg-gradient-to-br from-blue-50 to-indigo-100 flex py-4 px-24 " dir="rtl">
 
             {/* کانتینر اصلی */}
-            <div className=" flex-1 min-h-screen">
+            <div className=" flex-1 ">
                 {/* کارت فرم */}
                 <div className="bg-white/90 rounded-br-2xl rounded-tr-2xl  backdrop-blur-sm  shadow-[0_4px_6px_-1px_rgba(0,0,0,0.25)] p-8 relative overflow-hidden">
                     {/* هدر */}
@@ -289,14 +289,16 @@ const Signin = () => {
                     </li>
                 </ul>
 
-                <div className='flex flex-col text-white space-y-2'>
+                <div className='flex gap-5 text-white space-y-2'>
                     <div className='flex items-center space-x-2 space-x-reverse'>
-                        <Phone className="w-4 h-4 text-green-400" />
                         <span>05136043703</span>
+                        <Phone className="w-4 h-4 text-green-400" />
+                        
                     </div>
                     <div className='flex items-center space-x-2 space-x-reverse'>
-                        <Phone className="w-4 h-4 text-green-400" />
                         <span>09154064900</span>
+                        <Phone className="w-4 h-4 text-green-400" />
+                        
                     </div>
                 </div>
 

@@ -76,10 +76,10 @@ const Software = () => {
     ];
 
     return (
-        <div className="min-h-screen pb-20 pt-5 bg-white rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)] mb-14">
-            <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen mt-2  pb-12 bg-white rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)] mb-14">
+            <div className=" mx-auto">
                 {/* Header */}
-                <div className={`text-center mb-16 mt-4 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
+                <div className={`text-center  pb-12 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
                     <h1 className="text-4xl font-semibold drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] text-secondary mb-4">
                         نرم افزارهای ما
                     </h1>
@@ -95,7 +95,7 @@ const Software = () => {
                 </div>
 
                 {/* Software Grid */}
-                <div className="flex flex-wrap justify-center gap-6 ">
+                <div className="flex flex-wrap justify-center gap-7 ">
                     {softwareList.map((software, index) => {
                         const IconComponent = software.icon;
                         return (

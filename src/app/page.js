@@ -9,16 +9,16 @@ import Software from '@/components/Software';
 
 
 
+
 export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen bg-services" dir="rtl">
+      <div className=" bg-services" dir="rtl">
         <Header />
         <Heroimage />
         <Software />
         <Services />
-    
         <Start />
         <Footer />
         

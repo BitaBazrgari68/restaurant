@@ -24,7 +24,13 @@ import {
     FileText,
     Menu,
     X,
-    ChevronLeft
+    ChevronLeft,
+    LayoutTemplate,
+    Network ,
+    Settings ,
+    SearchCheck ,
+    ChartArea ,
+    HeartPulse 
 } from 'lucide-react';
 
 import Image from 'next/image'
@@ -140,45 +146,60 @@ const Header = () => {
             submenu: {
                 columns: [
                     {
-                        title: 'تلفن تماس',
+                        title: '05136043703 --  09154064900',
                         icon: <Phone className="w-4 h-4 text-amber-500" />,
-                        href: '/contact',
-
                     },
                     {
-                        title: 'ایمیل',
+                        title: 'info@datatrada.com',
                         icon: <Mail className="w-4 h-4 text-amber-700" />,
-                        href: '/email',
-
                     },
                     {
-                        title: 'آدرس',
+                        title: 'آدرس : مشهد، بلوار وکیل آباد ، خیابان عدل ، عدل 12',
                         icon: <MapPin className="w-4 h-4 text-fuchsia-600" />,
-                        href: '/address',
+                    },
 
-                    },
-                    {
-                        title: 'پشتیبانی 7/24',
-                        icon: <Clock className="w-4 h-4 text-rose-800" />,
-                        href: '/support'
-                    },
-                    {
-                        title: 'مشاوره رایگان',
-                        icon: <MessageSquare className="w-4 h-4 text-cyan-700" />,
-                        href: '/consultation'
-                    },
-                    {
-                        title: 'آموزش',
-                        icon: <FileText className="w-4 h-4 text-blue-600" />,
-                        href: '/training'
-                    }
                 ]
             }
         },
         {
-            title: 'بلاگ',
+            title: 'خدمات ما',
             icon: <FileText className="w-4 h-4" />,
-            href: '/blog'
+            hasDropdown: true,
+            submenu: {
+                columns: [
+                    {
+                        title: ' طراحی سایت ',
+                        icon: <LayoutTemplate className="w-5 h-5 text-blue-600" />,
+                        href: '/WebDesign',
+                    },
+                    {
+                        title: ' سئو ',
+                        icon: <SearchCheck  className="w-5 h-5 text-green-600" />,
+                        href: '/',
+                    },
+                    {
+                        title: ' امنیت ',
+                        icon: <Network className="w-5 h-5 text-purple-600" />,
+                        href: '/',
+                    },
+                    {
+                        title: ' دیجیتال مارکتینگ ',
+                        icon: <ChartArea  className="w-5 h-5 text-orange-600" />,
+                        href: '/',
+                    },
+                    {
+                        title: ' سخت افزار ',
+                        icon: <Settings  className="w-5 h-5 text-orange-600" />,
+                        href: '/',
+                    },
+                    {
+                        title: ' باشگاه مشتریان ',
+                        icon: <HeartPulse  className="w-5 h-5 text-orange-600" />,
+                        href: '/',
+                    },
+       
+                ]
+            }
         }
     ];
 
@@ -275,7 +296,7 @@ const Header = () => {
                         </button>
                         <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
                             <Link href="/">
-                                دموی رایگان
+                                 باشگاه مشتریان
                             </Link>
                         </button>
                     </div>

@@ -4,11 +4,11 @@ import {
     ChevronDown,
     Home,
     FolderCode,
-    Utensils ,
+    Utensils,
     ShoppingCart,
-    Puzzle ,
-    ScanText ,
-   Workflow ,
+    Puzzle,
+    ScanText,
+    Workflow,
     Users,
     Globe,
     Clock,
@@ -41,9 +41,9 @@ const DetailHeader = () => {
             icon: <Home className="w-4 h-4" />,
             href: '/'
         },
-        
-        
-        
+
+
+
         {
             title: 'تماس با ما',
             icon: <Phone className="w-4 h-4" />,
@@ -51,42 +51,22 @@ const DetailHeader = () => {
             submenu: {
                 columns: [
                     {
-                         title: 'تلفن تماس', 
-                         icon: <Phone className="w-4 h-4 text-amber-500" />,
-                         href: '/contact',
-                         extra: '۰۲۱-۹۱۰۰۲۹۰۰' 
-                    },
-                    { 
-                        title: 'ایمیل',
-                        icon: <Mail className="w-4 h-4 text-amber-700" />, 
-                        href: '/email', 
-                        extra: 'info@mupra.ir' 
+                        title: '05136043703 --  09154064900',
+                        icon: <Phone className="w-4 h-4 text-amber-500" />,
                     },
                     {
-                        title: 'آدرس', 
-                        icon: <MapPin className="w-4 h-4 text-fuchsia-600" />, 
-                        href: '/address', 
-                        extra: 'تهران، خیابان ولیعصر' 
-                    },
-                    { 
-                        title: 'پشتیبانی 7/24', 
-                        icon: <Clock className="w-4 h-4 text-rose-800" />, 
-                        href: '/support' 
+                        title: 'info@datatrada.com',
+                        icon: <Mail className="w-4 h-4 text-amber-700" />,
                     },
                     {
-                         title: 'مشاوره رایگان', 
-                         icon: <MessageSquare className="w-4 h-4 text-cyan-700" />, 
-                         href: '/consultation' 
+                        title: 'آدرس : مشهد، بلوار وکیل آباد ، خیابان عدل ، عدل 12',
+                        icon: <MapPin className="w-4 h-4 text-fuchsia-600" />,
                     },
-                    { 
-                        title: 'آموزش', 
-                        icon: <FileText className="w-4 h-4 text-blue-600" />, 
-                        href: '/training' 
-                    }
+
                 ]
             }
-        }
-        
+        },
+
     ];
 
     const handleMouseEnter = (index) => {
@@ -151,7 +131,7 @@ const DetailHeader = () => {
                                                 <div className="grid grid-cols-2  gap-4 lg:gap-6 min-w-0">
                                                     {item.submenu.columns.map((column, colIndex) => (
                                                         <div key={colIndex} className="space-y-3">
-                                                            <div className="flex items-center space-x-2 space-x-reverse pb-2 border-b border-gray-100">
+                                                            <div className="flex items-center gap-2 space-x-2 space-x-reverse pb-2 border-b border-gray-100">
                                                                 <div className="flex-shrink-0">{column.icon}</div>
                                                                 <h3 className="text-sm  font-semibold text-gray-900 whitespace-nowrap">
                                                                     {column.title}
@@ -171,9 +151,9 @@ const DetailHeader = () => {
                     </div>
 
                     <div className="block">
-                        
+
                         <button className="bg-primary text-secondary px-6 py-3 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
-                            برای سفارش این نرم افزار تماس بگیررید / 09154064900   
+                            برای سفارش  تماس بگیررید / 09154064900
                         </button>
 
                     </div>
@@ -258,7 +238,7 @@ const DetailHeader = () => {
                             </div>
                         ))}
 
-                        
+
                     </div>
                 </div>
             </div>

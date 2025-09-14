@@ -5,7 +5,7 @@ import "./globals.css";
 const yekan = localFont({
   src: [
     {
-      
+
       path: "../../public/fonts/YekanBakh-Light.woff2",
       weight: "100",
       style: "normal",
@@ -45,9 +45,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TRADA - ترادا",
-  description: "مجموعه نرم افزار های ترادا",
+  title: "DATATRADA - دیتاترادا",
+  description: " خدمات دیتاترادا شامل طراحی سایت ، سئو ، امنیت ، دیجیتال مارکتینگ ، سخت افزار ",
+  keywords: [
+    ' طراحی سایت ',
+    'سئو',
+    'امنیت',
+    'دیجیتال مارکتینگ',
+    'سخت افزار'
+  ].join(', '),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
+
+
+
 
 export default function RootLayout({ children }) {
   return (

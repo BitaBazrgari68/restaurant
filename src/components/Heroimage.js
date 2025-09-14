@@ -54,7 +54,7 @@ const Heroimage = () => {
 
         <div className="min-h-screen relative overflow-hidden bgHero">
 
-            <div className="absolute inset-x-0 top-0 bottom-32 bg-[#243954]/50 "></div>
+            <div className="absolute inset-x-0 top-0 bottom-28 bg-[#243954]/50 "></div>
 
             <div className="container mx-auto px-8 py-12 grid lg:grid-cols-2 gap-5 items-center min-h-screen z-10 ">
 
@@ -83,7 +83,7 @@ const Heroimage = () => {
 
                     {/* Features */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20">
+                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
                             <Users className="w-8 h-8 text-green-400 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">۳۰۰٪ افزایش کارایی</h3>
                             <p className="text-black/50 text-sm">همه ابزارها فقط در یک پنل</p>
@@ -94,13 +94,13 @@ const Heroimage = () => {
                             <h3 className="font-bold text-black/50 mb-2">مدیریت هوشمند</h3>
                             <p className="text-black/50 text-sm">دسترسی از هرجا و هر زمان</p>
                         </div> */}
-                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20">
+                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
                             <TrendingUp className="w-8 h-8 text-blue-400 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">مدیریت هوشمند</h3>
                             <p className="text-black/50 text-sm">دسترسی از هرجا و هر زمان</p>
                         </div>
 
-                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20">
+                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
                             <DollarSign className="w-8 h-8 text-red-500 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">کاهش هزینه</h3>
                             <p className="text-black/50 text-sm">تا ۷۷٪ کاهش هزینه </p>

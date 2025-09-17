@@ -30,7 +30,7 @@
 }
 
 body {
-    
+
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ffac30' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 
@@ -47,13 +47,14 @@ body {
     height: 2350px;
     overflow: hidden;
     position: relative;
-
+    display: flex;
+    justify-content: center;
 }
 
 .path .pathinfo {
-    margin-right: 0;
     width: 1270px;
-
+    margin: 0 auto;
+    position: relative;
 }
 
 .path svg {
@@ -66,6 +67,9 @@ body {
 .path ul {
     position: relative;
     z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .path ul li {
@@ -92,9 +96,6 @@ body {
 .path ul li img {
     position: relative;
     z-index: 1;
-}
-
-.path ul li img {
     border-radius: 24px;
 }
 
@@ -133,7 +134,6 @@ body {
     color: #2e73ce;
 }
 
-
 .path ul li.green {
     flex-direction: row-reverse;
     margin-top: -80px;
@@ -164,6 +164,7 @@ body {
 .path ul li.green .title {
     margin-top: 270px;
     margin-left: -60px;
+    text-align: left;
 }
 
 .path ul li.green .title b {
@@ -236,10 +237,86 @@ body {
 .path ul li.lastblue .title {
     margin-top: 90px;
     margin-left: -57px;
+    text-align: left;
 }
 
 .path ul li.lastblue .title b {
     color: #2e73ce;
+}
+
+/* برای مانیتورهای خیلی بزرگ */
+@media (min-width: 1921px) {
+    .path {
+        justify-content: center;
+    }
+    
+    .path .pathinfo {
+        width: 1270px;
+        margin: 0 auto;
+    }
+}
+
+/* برای مانیتورهای متوسط */
+@media (max-width: 1400px) {
+    .path .pathinfo {
+        width: min(1270px, 95vw);
+        margin: 0 auto;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .path {
+        height: auto;
+        min-height: 2000px;
+    }
+    
+    .path .pathinfo {
+        width: 95vw;
+    }
+    
+    .path svg {
+        width: 90%;
+        height: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .path ul li {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+        margin: 50px 0;
+        padding: 0 !important;
+    }
+    
+    .path ul li .title {
+        text-align: center !important;
+        margin: 20px 0 !important;
+        font-size: clamp(24px, 4vw, 32px);
+    }
+    
+    .path ul li .title b {
+        font-size: clamp(32px, 5vw, 42px);
+    }
+    
+    .path ul li .picture {
+        width: 80vw !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+    
+    .path ul li .picture::before {
+        display: none;
+    }
+    
+    .path ul li img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 300px;
+        margin: 0 !important;
+    }
 }
 
 .bgHero {
@@ -263,8 +340,6 @@ body {
     transform: translateX(50%);
     padding-right: 174px;
     padding-left: 39px;
-    display: flex;
-    align-items: center;
     box-sizing: border-box;
     background: rgba(255, 255, 255, .9);
     backdrop-filter: blur(20px);
@@ -405,29 +480,53 @@ body {
 
 }
 
+/* اصلاح container اصلی */
+.whyMupra {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1200px;
+    /* محدود کردن عرض */
+    height: fit-content;
+    padding: 0 20px;
+    /* اضافه کردن padding */
+    box-sizing: border-box;
+}
+
+/* اصلاح container تصاویر */
 .images {
     position: relative;
     width: 100%;
+    max-width: 100%;
     margin-top: -125px;
+    overflow: hidden;
+    /* جلوگیری از overflow */
 }
 
 .images picture.active img {
     opacity: 1;
 }
 
+/* اصلاح تصاویر */
 .images img {
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     max-width: 100%;
-    min-width: 700px;
+    width: auto;
+    height: auto;
+    /* حذف min-width: 700px که مشکل ساز بود */
 }
 
+/* اصلاح content container */
 .content {
-    width: 1326px;
+    width: 100%;
+    max-width: 1200px;
+    /* بجای 1326px */
     height: 750px;
     display: block;
+    margin: 0 auto;
+    position: relative;
 }
 
 .whyMupra .content {
@@ -436,42 +535,104 @@ body {
     max-width: 100%;
 }
 
+/* استایل های desc */
 .whyMupra .desc {
-
     position: absolute;
     background: #fff;
     width: fit-content;
-    padding: 5px 10px;
+    max-width: 280px;
+    /* محدود کردن عرض */
+    padding: 10px 15px;
+    /* افزایش padding */
     border-radius: 10px;
     z-index: 222;
-
+    display: none;
     box-shadow: 0 20px 60px rgba(185, 198, 216, .4);
-}
-
-.whyMupra .desc.order.desc1 {
-    left: 19%;
-    top: 47%;
+    word-wrap: break-word;
+    /* شکستن کلمات طولانی */
 }
 
 .whyMupra .desc.active {
     display: block;
 }
 
-.whyMupra .desc {
-    position: absolute;
-    background: #fff;
-    width: fit-content;
-    padding: 5px 10px;
-    border-radius: 10px;
-    z-index: 222;
-    box-shadow: 0 20px 60px rgba(185, 198, 216, .4);
+/* Responsive positioning برای desc ها */
+.whyMupra .desc.order.desc1 {
+    left: 19%;
+    top: 43%;
 }
 
-.whyMupra .desc.order.desc1 .ripple {
-    top: -23px;
-    right: -26px;
+.whyMupra .desc.order.desc2 {
+    left: 51%;
+    bottom: 50%;
 }
 
+.whyMupra .desc.order.desc3 {
+    left: 44%;
+    top: 30%;
+}
+
+.whyMupra .desc.order.desc4 {
+    left: 73%;
+    top: 45%;
+}
+
+.whyMupra .desc.preparing.desc1 {
+    right: 5%;
+    top: 5%;
+}
+
+.whyMupra .desc.preparing.desc2 {
+    left: 74%;
+    bottom: 18%;
+}
+
+.whyMupra .desc.preparing.desc3 {
+    top: 15%;
+    left: 59%;
+}
+
+.whyMupra .desc.payAndSurvey.desc1 {
+    left: 6%;
+    top: 45%;
+}
+
+.whyMupra .desc.payAndSurvey.desc2 {
+    left: 17%;
+    bottom: 16%;
+}
+
+.whyMupra .desc.payAndSurvey.desc3 {
+    bottom: 45%;
+    left: 40%;
+}
+
+.whyMupra .desc.payAndSurvey.desc4 {
+    bottom: 20%;
+    left: 49%;
+}
+
+.whyMupra .desc.managment.desc1 {
+    left: 4%;
+    top: 20%;
+}
+
+.whyMupra .desc.managment.desc2 {
+    left: 14%;
+    top: 42%;
+}
+
+.whyMupra .desc.managment.desc3 {
+    top: 32%;
+    left: 26%;
+}
+
+.whyMupra .desc.managment.desc4 {
+    top: 20%;
+    left: 25%;
+}
+
+/* Ripple styles */
 .ripple {
     color: #fff;
     width: 50px;
@@ -482,9 +643,6 @@ body {
 .ripple:before {
     background: url(/ripple.svg) no-repeat center;
     background-size: cover;
-}
-
-.ripple:before {
     content: '';
     display: block;
     position: absolute;
@@ -502,10 +660,6 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-}
-
-.ripple:after,
-.ripple:before {
     content: '';
     display: block;
     position: absolute;
@@ -513,14 +667,109 @@ body {
     bottom: 0;
 }
 
+/* Ripple positioning */
+.whyMupra .desc.order.desc1 .ripple {
+    top: -23px;
+    right: -26px;
+}
+
+.whyMupra .desc.order.desc2 .ripple {
+    bottom: -27px;
+    left: -20px;
+}
+
+.whyMupra .desc.order.desc3 .ripple,
+.whyMupra .desc.order.desc4 .ripple {
+    bottom: -26px;
+    left: -23px;
+}
+
+.whyMupra .desc.preparing.desc1 .ripple {
+    bottom: -20px;
+    left: -25px;
+}
+
+.whyMupra .desc.preparing.desc2 .ripple {
+    top: -21px;
+    left: -23px;
+}
+
+.whyMupra .desc.preparing.desc3 .ripple {
+    bottom: -22px;
+    left: -23px;
+}
+
+.whyMupra .desc.payAndSurvey.desc1 .ripple {
+    bottom: -34px;
+    right: -5%;
+}
+
+.whyMupra .desc.payAndSurvey.desc2 .ripple {
+    top: -27px;
+    right: -26px;
+}
+
+.whyMupra .desc.payAndSurvey.desc3 .ripple {
+    bottom: -27px;
+    left: -23px;
+}
+
+.whyMupra .desc.payAndSurvey.desc4 .ripple {
+    top: -23px;
+    left: -26px;
+}
+
+.whyMupra .desc.managment.desc1 .ripple {
+    bottom: -24px;
+    right: -24px;
+}
+
+.whyMupra .desc.managment.desc2 .ripple {
+    top: -26px;
+    left: -23px;
+}
+
+.whyMupra .desc.managment.desc3 .ripple {
+    top: -26px;
+    left: -24px;
+}
+
+.whyMupra .desc.managment.desc4 .ripple {
+    bottom: -23px;
+    left: -23px;
+}
+
+/* Typography */
+.whyMupra h2 {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 62px;
+    display: block;
+    text-align: center;
+    color: var(--darkbluetext);
+    margin-bottom: 20px;
+}
+
+.whyMupra>p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 62px;
+    display: block;
+    margin-bottom: 22px;
+    text-align: center;
+    color: #0F1F33;
+}
+
 .whyMupra .desc h5.title {
     font-weight: 600;
     font-size: 17px;
     line-height: 35px;
+    margin-bottom: 10px;
 }
 
 .whyMupra .desc ul {
     padding-right: 20px;
+    margin: 0;
 }
 
 .whyMupra .desc ul li {
@@ -539,217 +788,19 @@ body {
     line-height: 40px;
 }
 
-
-.whyMupra .desc.order.desc2 {
-    left: 51%;
-    bottom: 42%;
-}
-
-.whyMupra .desc.order.desc2 .ripple {
-    bottom: -27px;
-    left: -20px;
-}
-
-.whyMupra .desc.order.desc3 {
-    left: 44%;
-    top: 37%;
-}
-
-.whyMupra .desc.order.desc4 {
-    left: 73%;
-    top: 55%;
-}
-
-.whyMupra .desc.order.desc4 .ripple {
-    bottom: -26px;
-    left: -23px;
-}
-
-
-
-.whyMupra .desc.preparing.desc1 {
-    right: 5%;
-    top: 16%;
-}
-
-.whyMupra .desc.preparing.desc1 .ripple {
-    bottom: -20px;
-    left: -25px;
-}
-
-.whyMupra .desc.preparing.desc2 {
-    left: 74%;
-    bottom: 18%;
-}
-
-.whyMupra .desc ul li {
-    list-style: disc;
-    text-align: right;
-    color: #0f1f33;
-    font-size: 14px;
-    line-height: 28px;
-    position: relative;
-}
-
-.whyMupra .desc.preparing.desc2 .ripple {
-    top: -21px;
-    left: -23px;
-}
-
-.whyMupra .desc.preparing.desc3 {
-    top: 20%;
-    left: 59%;
-}
-
-.whyMupra .desc.order.desc3 .ripple {
-    bottom: -26px;
-    left: -23px;
-}
-
-.whyMupra .desc {
-    position: absolute;
-    background: #fff;
-    width: fit-content;
-    padding: 5px 10px;
-    border-radius: 10px;
-    z-index: 222;
-    display: none;
-    box-shadow: 0 20px 60px rgba(185, 198, 216, .4);
-}
-
-.whyMupra .desc.payAndSurvey.desc1 {
-    left: 6%;
-    top: 55%;
-}
-
-.whyMupra .desc.payAndSurvey.desc1 .ripple {
-    bottom: -34px;
-    right: -5%;
-}
-
-.whyMupra .desc.payAndSurvey.desc2 {
-    left: 17%;
-    bottom: 8%;
-}
-
-.whyMupra .desc.payAndSurvey.desc2 .ripple {
-    top: -27px;
-    right: -26px;
-}
-
-.whyMupra .desc.payAndSurvey.desc3 {
-    bottom: 36%;
-    left: 40%;
-}
-
-.whyMupra .desc.payAndSurvey.desc3 .ripple {
-    bottom: -27px;
-    left: -23px;
-}
-
-.whyMupra .desc.payAndSurvey.desc4 {
-    bottom: 12%;
-    left: 49%;
-}
-
-.whyMupra .desc.payAndSurvey.desc4 .ripple {
-    top: -23px;
-    left: -26px;
-}
-
-.whyMupra .desc.managment.desc1 {
-    left: 4%;
-    top: 25%;
-}
-
-.whyMupra .desc.managment.desc1 .ripple {
-    bottom: -24px;
-    right: -24px;
-}
-
-.whyMupra .desc.managment.desc2 {
-    left: 14%;
-    top: 48%;
-}
-
-.whyMupra .desc.managment.desc2 .ripple {
-    top: -26px;
-    left: -23px;
-}
-
-.whyMupra .desc.managment.desc3 {
-    top: 38%;
-    left: 26%;
-}
-
-.whyMupra .desc.managment.desc3 .ripple {
-    top: -26px;
-    left: -24px;
-}
-
-.whyMupra .desc.managment.desc4 {
-    top: 26%;
-    left: 25%;
-}
-
-.whyMupra .desc.managment.desc4 .ripple {
-    bottom: -23px;
-    left: -23px;
-}
-
-
-
-.whyMupra {
-    margin: 30px auto 30px;
-    width: fit-content;
-    height: fit-content;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.whyMupra h2 {
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 62px;
-    display: block;
-}
-
-.whyMupra h2 {
-    text-align: center;
-    color: var(--darkbluetext);
-}
-
-.whyMupra>p {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 62px;
-    display: block;
-    margin-bottom: 22px;
-}
-
-.whyMupra>p {
-    text-align: center;
-    color: #0F1F33;
-}
-
+/* Switch buttons */
 .mupraSwitch {
     background: #fff;
     border-radius: 53px;
     width: fit-content;
+    max-width: 100%;
     padding: 10px;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     display: flex;
-    max-width: 100%;
-
-    ;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.mupraSwitch button.active {
-    color: #fafbfe;
-    background-color: #2e73ce;
+    gap: 5px;
 }
 
 .mupraSwitch button {
@@ -760,20 +811,98 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    background: 0 0;
+    background: transparent;
     border: 0;
     z-index: 1;
     min-width: fit-content;
     border-radius: 30px;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
-.desc.preparing.desc3 .ripple {
-    bottom: -22px;
-    left: -23px;
+.mupraSwitch button.active {
+    color: #fafbfe;
+    background-color: #2e73ce;
 }
 
-.bg-services {
+/* Media Queries */
+@media (max-width: 1400px) {
+    .whyMupra .desc {
+        max-width: 240px;
+        padding: 8px 12px;
+    }
 
+    .whyMupra .desc h5.title {
+        font-size: 15px;
+    }
 
+    .whyMupra .desc ul li {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        height: 600px;
+    }
+
+    .images {
+        margin-top: -80px;
+    }
+
+    .whyMupra .desc {
+        position: static !important;
+        display: block !important;
+        margin: 10px auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .whyMupra .desc .ripple {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .whyMupra {
+        padding: 0 15px;
+    }
+
+    .whyMupra h2 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .whyMupra>p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .mupraSwitch {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .mupraSwitch button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .content {
+        height: auto;
+    }
+
+    .images {
+        margin-top: 20px;
+    }
+}
+
+/* جلوگیری از overflow کل صفحه */
+body {
+    overflow-x: hidden;
+}
+
+#__next {
+    max-width: 100vw;
+    overflow-x: hidden;
 }

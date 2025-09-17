@@ -48,29 +48,35 @@ const Heroimage = () => {
         return () => clearInterval(timer);
     }, []);
 
-
+    // Function to get responsive scale based on screen width
+    const getPhoneScale = () => {
+        if (typeof window !== 'undefined') {
+            const width = window.innerWidth;
+            if (width >= 2560) return 2.2; // 4K screens
+            if (width >= 1920) return 1.8; // Large monitors
+            if (width >= 1600) return 1.6; // Standard large screens
+            if (width >= 1200) return 1.5; // Desktop default
+            if (width >= 1024) return 1.3; // Small desktop/large tablet
+            return 1; // Mobile/tablet
+        }
+        return 1.5; // Default fallback
+    };
 
     return (
-
         <div className="min-h-screen relative overflow-hidden bgHero">
-
-            <div className="absolute inset-x-0 top-0 bottom-28 bg-[#243954]/50 "></div>
-
             <div className="container mx-auto px-8 py-12 grid lg:grid-cols-2 gap-5 items-center min-h-screen z-10 ">
-
-
                 {/* Right Side - Content */}
                 <div className="text-center lg:text-right space-y-8 order-1 lg:order-1 z-20 pr-5 ">
                     {/* Badge */}
-                    <div className="relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/50 before:pointer-events-none inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+                    <div className="relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/50 before:pointer-events-none inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-full px-6 py-3 text-white">
                         <Star className="w-5 h-5 fill-yellow-400 text-secondary" />
                         <span className="text-sm font-medium">  انتخاب مطمئن </span>
                     </div>
 
                     {/* Main Title */}
                     <div className="space-y-4">
-                        <h1 className="text-5xl font-semibold text-white leading-tight">
-                            نرم افزارهای یکپارچه ابری ترادا
+                        <h1 className="text-5xl font-semibold text-secondary leading-tight">
+                            مجموعه خدمات دیتاترادا
                         </h1>
                     </div>
 
@@ -89,11 +95,6 @@ const Heroimage = () => {
                             <p className="text-black/50 text-sm">همه ابزارها فقط در یک پنل</p>
                         </div>
 
-                        {/* <div className="bg-white/60  rounded-xl p-6 border border-white/20">
-                            <TrendingUp className="w-8 h-8 text-blue-400 mb-3 mx-auto lg:mr-0" />
-                            <h3 className="font-bold text-black/50 mb-2">مدیریت هوشمند</h3>
-                            <p className="text-black/50 text-sm">دسترسی از هرجا و هر زمان</p>
-                        </div> */}
                         <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
                             <TrendingUp className="w-8 h-8 text-blue-400 mb-3 mx-auto lg:mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">مدیریت هوشمند</h3>
@@ -107,17 +108,63 @@ const Heroimage = () => {
                         </div>
                     </div>
                 </div>
+                
                 {/* Left Side - Mobile Mockup */}
-                <div className="hidden md:flex md:justify-center order-2 lg:order-2  ">
-                    <div style={{ transform: 'scale(1.5)', transformOrigin: 'center' }} >
+                <div className="hidden md:flex md:justify-center order-2 lg:order-2">
+                    <div 
+                        className="phone-responsive-container"
+                        style={{ 
+                            transform: `scale(${getPhoneScale()})`, 
+                            transformOrigin: 'center',
+                            transition: 'transform 0.3s ease'
+                        }}
+                    >
                         <img
                             src="/images/phone-image.png"
                             alt="با دیتاترادا آشنا شوید"
-                            style={{ width: '500px', height:'400px'}}
+                            style={{ width: '500px', height: '400px' }}
                         />
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                @media (min-width: 2560px) {
+                    .phone-responsive-container {
+                        transform: scale(2.2) !important;
+                    }
+                }
+                
+                @media (min-width: 1920px) and (max-width: 2559px) {
+                    .phone-responsive-container {
+                        transform: scale(1.8) !important;
+                    }
+                }
+                
+                @media (min-width: 1600px) and (max-width: 1919px) {
+                    .phone-responsive-container {
+                        transform: scale(1.6) !important;
+                    }
+                }
+                
+                @media (min-width: 1200px) and (max-width: 1599px) {
+                    .phone-responsive-container {
+                        transform: scale(1.5) !important;
+                    }
+                }
+                
+                @media (min-width: 1024px) and (max-width: 1199px) {
+                    .phone-responsive-container {
+                        transform: scale(1.3) !important;
+                    }
+                }
+                
+                @media (max-width: 1023px) {
+                    .phone-responsive-container {
+                        transform: scale(1) !important;
+                    }
+                }
+            `}</style>
         </div>
     );
 }

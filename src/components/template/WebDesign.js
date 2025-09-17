@@ -9,48 +9,48 @@ const WebDesign = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: "  انجمن دفاع از حقوق معلولین باران ",
-      year: "1402",
-      href: "https://baranngo.ir/",
-      image: "/images/webDesign/baranngo.png",
+      title: " آتلیه عروس و داماد اکسیژن ",
+      
+      href: "https://wedding.oxygenstudio.ir/",
+      image: "/images/webDesign/wedding-xygenstudio.png",
       alt: "  1 نمونه طراحی سایت  "
     },
     {
       id: 2,
-      title: "وب‌سایت فروشگاهی",
-      year: "1403",
-      href: "https://danehcafe.vercel.app/fa",
-      image: "/images/webDesign/danehcafe.png",
+      title: " استودیو دیجیتال مارکتینگ اکسیژن ",
+      
+      href: "https://ad.oxygenstudio.ir/",
+      image: "/images/webDesign/digitalMarketing.png",
       alt: " 2 نمونه طراحی سایت  "
     },
     {
       id: 3,
-      title: " شرکت جک گازی گردون ",
-      year: "1403",
-      href: "https://s-gardoon.com/",
-      image: "/images/webDesign/gardoon.png",
+      title: "  موسسه ی فرهنگی هنری آرتا   ",
+     
+      href: "https://oxygenstudio.ir/arta//",
+      image: "/images/webDesign/arta.png",
       alt: " 3 نمونه طراحی سایت  "
     },
     {
       id: 4,
-      title: " کلینیک دندانپزشکی ",
-      year: "1402",
-      href: "https://beautiful-smile.vercel.app/",
-      image: "/images/webDesign/dental.png",
+      title: "  تشریفات سالی فود ",
+      
+      href: "https://salifingerfood.ir/",
+      image: "/images/webDesign/salifingerfood.png",
       alt: " 4 نمونه طراحی سایت  "
     },
     {
       id: 5,
-      title: " قهرمان چرخ  ",
-      year: "1403",
-      href: "https://ghch.ir/",
-      image: "/images/webDesign/ghch.png",
+      title: " هلدینگ رسانه ای اکسیژن ",
+      
+      href: "https://oxygenstudio.ir/",
+      image: "/images/webDesign/oxygenstudio.png",
       alt: " نمونه طراحی سایت 5 "
     },
     {
       id: 6,
       title: " ایران مکمل ",
-      year: "1402",
+      
       href: "https://iransupplement.com/?v=b1cb2365a1b7",
       image: "/images/webDesign/iransupplement.png",
       alt: " نمونه طراحی سایت 6  "
@@ -58,7 +58,7 @@ const WebDesign = () => {
     {
       id: 7,
       title: "  کاراکیت ",
-      year: "1402",
+      
       href: "https://karakitpart.ir/",
       image: "/images/webDesign/karakit.png",
       alt: " نمونه طراحی سایت 7  "
@@ -66,7 +66,7 @@ const WebDesign = () => {
     {
       id: 8,
       title: "  لیزر افزار پرتو ",
-      year: "1402",
+      
       href: "https://www.laserafzar.ir/",
       image: "/images/webDesign/laserafzar.png",
       alt: " نمونه طراحی سایت 8  "
@@ -74,7 +74,7 @@ const WebDesign = () => {
     {
       id: 9,
       title: "    ویکی حرفه ",
-      year: "1402",
+      
       href: "wikiherfeh.vercel.app",
       image: "/images/webDesign/wikiherfeh.png",
       alt: " نمونه طراحی سایت 9  "
@@ -82,7 +82,7 @@ const WebDesign = () => {
     {
       id: 10,
       title: "    ونگارد ",
-      year: "1402",
+      
       href: "https://vanguardbelt.com/vanguardbelt-home/",
       image: "/images/webDesign/vanguardbelt.png",
       alt: " نمونه طراحی سایت 10  "
@@ -90,7 +90,7 @@ const WebDesign = () => {
     {
       id: 11,
       title: " متاشید ",
-      year: "1402",
+      
       href: " https://metasheed.vercel.app/ ",
       image: "/images/webDesign/metasheed.png",
       alt: " نمونه طراحی سایت 11  "
@@ -98,11 +98,35 @@ const WebDesign = () => {
     {
       id: 12,
       title: " سندیار ",
-      year: "1402",
+      
       href: " https://sanad-yar.vercel.app/ ",
       image: "/images/webDesign/sanad-yar.png",
       alt: " نمونه طراحی سایت 12  "
-    }
+    },
+    {
+      id: 13,
+      title: " شرکت جک گازی گردون ",
+     
+      href: "https://s-gardoon.com/",
+      image: "/images/webDesign/gardoon.png",
+      alt: " 13 نمونه طراحی سایت  "
+    },
+    {
+      id: 14,
+      title: " کلینیک دندانپزشکی ",
+      
+      href: "https://beautiful-smile.vercel.app/",
+      image: "/images/webDesign/dental.png",
+      alt: " 14 نمونه طراحی سایت  "
+    },
+    {
+      id: 15,
+      title: " قهرمان چرخ  ",
+      
+      href: "https://ghch.ir/",
+      image: "/images/webDesign/ghch.png",
+      alt: " 1نمونه طراحی سایت 5 "
+    },
   ];
 
 

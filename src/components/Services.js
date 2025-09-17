@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Cloud, BarChart3, Clock, LayoutTemplate, Network, Settings, SearchCheck, ChartArea, Palette, Search, Shield, Megaphone, HardDrive } from 'lucide-react';
 import Link from 'next/link';
-import WebDesign from './template/WebDesign';
+
 
 const Services = () => {
     return (
@@ -24,36 +24,42 @@ const Services = () => {
                             {
                                 icon: <Palette className="w-8 h-8" />,
                                 title: "طراحی سایت",
-                                description: "طراحی و توسعه وب‌سایت‌های مدرن و ریسپانسیو"
+                                description: "طراحی و توسعه وب‌سایت‌های مدرن و ریسپانسیو",
+                                link:'/WebDesign'
                             },
                             {
                                 icon: <Search className="w-8 h-8" />,
                                 title: "سئو",
-                                description: "بهینه‌سازی موتورهای جستجو و افزایش رتبه سایت"
+                                description: "بهینه‌سازی موتورهای جستجو و افزایش رتبه سایت",
+                                link:'/Seo'
                             },
                             {
                                 icon: <Shield className="w-8 h-8" />,
                                 title: "امنیت",
-                                description: "محافظت از سیستم‌ها و داده‌ها در برابر تهدیدات سایبری"
+                                description: "محافظت از سیستم‌ها و داده‌ها در برابر تهدیدات سایبری",
+                                link:'/ComingSoon'
                             },
                             {
                                 icon: <Megaphone className="w-8 h-8" />,
                                 title: "دیجیتال مارکتینگ",
-                                description: "تبلیغات آنلاین و بازاریابی دیجیتال در شبکه‌های اجتماعی"
+                                description: "تبلیغات آنلاین و بازاریابی دیجیتال در شبکه‌های اجتماعی",
+                                link:'https://ad.oxygenstudio.ir/'
                             },
                             {
                                 icon: <HardDrive className="w-8 h-8" />,
                                 title: "سخت‌افزار",
-                                description: " فروش و پشتیبانی انواع تجهیزات و قطعات سخت‌افزاری "
+                                description: " فروش و پشتیبانی انواع تجهیزات و قطعات سخت‌افزاری ",
+                                link:'/ComingSoon'
                             },
                             {
                                 icon: <Clock className="w-8 h-8" />,
                                 title: "پشتیبانی ۲۴/۷",
-                                description: "دریافت کمک فنی در تمامی ساعات شبانه‌روز"
+                                description: "دریافت کمک فنی در تمامی ساعات شبانه‌روز",
+                                link:'/ComingSoon'
                             }
                         ].map((feature, index) => (
                             <div key={index} className="group p-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                                <Link href='/WebDesign'>
+                                <Link href={feature.link} target='_blank'>
                                     <div className="w-16 h-16 bg-gradient-to-br from-[#243954] to-slate-500 rounded-2xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform duration-300 relative before:absolute before:inset-1 before:rounded-2xl before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
                                         {feature.icon}
                                     </div>

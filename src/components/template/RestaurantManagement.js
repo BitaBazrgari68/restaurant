@@ -53,7 +53,7 @@ const RestaurantManagement = () => {
                 <div className=' flex justify-between items-center w-full rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)]'>
                     <h1 className=' flex items-center pr-8 text-4xl font-semibold drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] text-secondary   '>
                         <span> / </span>
-                    نرم افزار مدیریت رستوران و کافه
+                        نرم افزار مدیریت رستوران و کافه
                         <span>/ </span>
                     </h1>
 
@@ -63,19 +63,16 @@ const RestaurantManagement = () => {
                 </div>
             </div>
 
-
-
-            
             <Path />
             <Tab />
-            <div className='my-5'>
+            <div className='pb-5'>
                 <div className="container mx-auto px-6 pb-20">
                     {/* Header */}
-                    <div className="mb-6">
-                        <h3 className="text-2xl font-bold text-[#243954] mb-2">
+                    <div className="my-8 flex flex-col items-center justify-center">
+                        <h3 className="text-2xl font-semibold text-[#243954] mb-2">
                             سایر نرم‌افزارها
                         </h3>
-                        <div className="w-12 h-1 bg-[#FFAC30] rounded-full"></div>
+                        <div className="w-12 h-1 bg-[#FFAC30] rounded-full "></div>
                     </div>
 
                     {/* Software List */}
@@ -97,6 +94,7 @@ const RestaurantManagement = () => {
                     </div>
                 </div>
             </div>
+
             <Footer />
         </div>
     );

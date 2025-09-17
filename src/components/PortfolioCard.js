@@ -58,9 +58,6 @@ const PortfolioCard = ({ item }) => {
                     <h2 className="text-lg font-semibold mb-2 text-right">
                         {item.title}
                     </h2>
-                    <div className="text-sm ">
-                        <span>سال: {item.year}</span>
-                    </div>
                 </div>
             </div>
         </div>

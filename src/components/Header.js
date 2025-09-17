@@ -26,11 +26,11 @@ import {
     X,
     ChevronLeft,
     LayoutTemplate,
-    Network ,
-    Settings ,
-    SearchCheck ,
-    ChartArea ,
-    HeartPulse 
+    Network,
+    Settings,
+    SearchCheck,
+    ChartArea,
+    HeartPulse
 } from 'lucide-react';
 
 import Image from 'next/image'
@@ -61,27 +61,27 @@ const Header = () => {
                     {
                         title: '   نرم افزار تشخیص هوشمند پلاک خودرو  ',
                         icon: <ScanText className="w-5 h-5 text-green-600" />,
-                        href: '/LicensePlate',
+                        href: '/ComingSoon',
                     },
                     {
                         title: ' نرم افزار کافی شاپ ',
                         icon: <Coffee className="w-5 h-5 text-purple-600" />,
-                        href: '/CoffeeShop',
+                        href: '/ComingSoon',
                     },
                     {
                         title: ' نرم افزار جامع فروش و حسابداری ',
                         icon: <Calculator className="w-5 h-5 text-orange-600" />,
-                        href: '/Accounting',
+                        href: '/ComingSoon',
                     },
                     {
                         title: ' اتوماسیون جامع کانبان ',
                         icon: <Workflow className="w-5 h-5 text-orange-600" />,
-                        href: '/KanbanAutomation',
+                        href: '/ComingSoon',
                     },
                     {
                         title: ' نرم افزار انبار شناور ',
                         icon: <Warehouse className="w-5 h-5 text-orange-600" />,
-                        href: '/Warehouse',
+                        href: '/ComingSoon',
                     },
                     {
                         title: ' سامانه مدیریت سفارش گیری و توزین بتن و آسفالت ',
@@ -100,40 +100,64 @@ const Header = () => {
                     {
                         title: 'رستوران‌ها',
                         icon: <UtensilsCrossed className="w-5 h-5 text-red-600" />,
-                        items: [
-                            { title: 'رستوران فاین داینینگ', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/fine-dining' },
-                            { title: 'رستوران خانوادگی', icon: <Users className="w-4 h-4" />, href: '/family-restaurant' },
-                            { title: 'رستوران سنتی', icon: <Home className="w-4 h-4" />, href: '/traditional' }
-                        ]
+                        href: '/ComingSoon',
                     },
                     {
                         title: 'کافی شاپ‌ها',
                         icon: <Coffee className="w-5 h-5 text-amber-600" />,
-                        items: [
-                            { title: 'کافی شاپ', icon: <Coffee className="w-4 h-4" />, href: '/coffee-shop' },
-                            { title: 'کافه رستوران', icon: <Store className="w-4 h-4" />, href: '/cafe-restaurant' },
-                            { title: 'کافه بوک', icon: <FileText className="w-4 h-4" />, href: '/book-cafe' }
-                        ]
+                        href: '/ComingSoon',
                     },
                     {
                         title: 'فست فود',
                         icon: <ShoppingCart className="w-5 h-5 text-yellow-600" />,
-                        items: [
-                            { title: 'فست فود', icon: <ShoppingCart className="w-4 h-4" />, href: '/fast-food' },
-                            { title: 'پیتزا', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/pizza' },
-                            { title: 'ساندویچی', icon: <Store className="w-4 h-4" />, href: '/sandwich' }
-                        ]
+                        href: '/ComingSoon',
                     },
                     {
                         title: 'سایر',
                         icon: <Store className="w-5 h-5 text-indigo-600" />,
-                        items: [
-                            { title: 'فودکورت', icon: <Store className="w-4 h-4" />, href: '/food-court' },
-                            { title: 'کترینگ', icon: <UtensilsCrossed className="w-4 h-4" />, href: '/catering' },
-                            { title: 'تک شعبه', icon: <MapPin className="w-4 h-4" />, href: '/single-branch' },
-                            { title: 'زنجیره‌ای', icon: <Globe className="w-4 h-4" />, href: '/chain' }
-                        ]
+                        href: '/ComingSoon',
                     }
+                ]
+            }
+        },
+
+        {
+            title: 'خدمات ما',
+            icon: <FileText className="w-4 h-4" />,
+            hasDropdown: true,
+            submenu: {
+                columns: [
+                    {
+                        title: ' طراحی سایت ',
+                        icon: <LayoutTemplate className="w-5 h-5 text-blue-600" />,
+                        href: '/WebDesign',
+                    },
+                    {
+                        title: ' سئو ',
+                        icon: <SearchCheck className="w-5 h-5 text-green-600" />,
+                        href: '/Seo',
+                    },
+                    {
+                        title: ' امنیت ',
+                        icon: <Network className="w-5 h-5 text-purple-600" />,
+                        href: '/ComingSoon',
+                    },
+                    {
+                        title: ' دیجیتال مارکتینگ ',
+                        icon: <ChartArea className="w-5 h-5 text-orange-600" />,
+                        href: 'https://ad.oxygenstudio.ir/',
+                    },
+                    {
+                        title: ' سخت افزار ',
+                        icon: <Settings className="w-5 h-5 text-orange-600" />,
+                        href: '/ComingSoon',
+                    },
+                    {
+                        title: ' باشگاه مشتریان ',
+                        icon: <HeartPulse className="w-5 h-5 text-orange-600" />,
+                        href: '/ComingSoon',
+                    },
+
                 ]
             }
         },
@@ -161,46 +185,7 @@ const Header = () => {
                 ]
             }
         },
-        {
-            title: 'خدمات ما',
-            icon: <FileText className="w-4 h-4" />,
-            hasDropdown: true,
-            submenu: {
-                columns: [
-                    {
-                        title: ' طراحی سایت ',
-                        icon: <LayoutTemplate className="w-5 h-5 text-blue-600" />,
-                        href: '/WebDesign',
-                    },
-                    {
-                        title: ' سئو ',
-                        icon: <SearchCheck  className="w-5 h-5 text-green-600" />,
-                        href: '/',
-                    },
-                    {
-                        title: ' امنیت ',
-                        icon: <Network className="w-5 h-5 text-purple-600" />,
-                        href: '/',
-                    },
-                    {
-                        title: ' دیجیتال مارکتینگ ',
-                        icon: <ChartArea  className="w-5 h-5 text-orange-600" />,
-                        href: '/',
-                    },
-                    {
-                        title: ' سخت افزار ',
-                        icon: <Settings  className="w-5 h-5 text-orange-600" />,
-                        href: '/',
-                    },
-                    {
-                        title: ' باشگاه مشتریان ',
-                        icon: <HeartPulse  className="w-5 h-5 text-orange-600" />,
-                        href: '/',
-                    },
-       
-                ]
-            }
-        }
+
     ];
 
     const handleMouseEnter = (index) => {
@@ -267,8 +252,8 @@ const Header = () => {
                                                         <div key={colIndex} className="space-y-3">
                                                             <div className="flex items-center space-x-2 space-x-reverse pb-2 border-b border-gray-100">
                                                                 <Link href={column.href || '#'}
-                                                                target="_blank"
-                                                                className='flex gap-2'>
+                                                                    target="_blank"
+                                                                    className='flex gap-2'>
                                                                     <div className="flex-shrink-0">{column.icon}</div>
                                                                     <h3 className="text-sm  font-semibold text-gray-900 whitespace-nowrap">
                                                                         {column.title}
@@ -296,7 +281,7 @@ const Header = () => {
                         </button>
                         <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
                             <Link href="/">
-                                 باشگاه مشتریان
+                                باشگاه مشتریان
                             </Link>
                         </button>
                     </div>

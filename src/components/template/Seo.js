@@ -8,91 +8,55 @@ const Seo = () => {
     const portfolioItems = [
         {
             id: 1,
-            title: " آتلیه عروس و داماد اکسیژن ",
-            href: "https://wedding.oxygenstudio.ir/",
-            image: "/images/webDesign/wedding-xygenstudio.png",
-            alt: "  1 نمونه طراحی سایت  "
+            title: " آلو بخارا",
+            href: "https://aloobukhara.com/",
+            image: "/images/webDesign/aloobukhara.png",
+            alt: "  1 نمونه سئو سایت  "
         },
         {
             id: 2,
-            title: " استودیو دیجیتال مارکتینگ اکسیژن ",
-            href: "https://ad.oxygenstudio.ir/",
-            image: "/images/webDesign/digitalMarketing.png",
-            alt: " 2 نمونه طراحی سایت  "
+            title: " آتلیه عروس و داماد اکسیژن ",
+            href: "https://wedding.oxygenstudio.ir/",
+            image: "/images/webDesign/wedding-xygenstudio.png",
+            alt: "  2 نمونه سئو سایت  "
         },
         {
             id: 3,
-            title: "  موسسه ی فرهنگی هنری آرتا   ",
-            href: "https://oxygenstudio.ir/arta//",
-            image: "/images/webDesign/arta.png",
-            alt: " 3 نمونه طراحی سایت  "
+            title: " استودیو دیجیتال مارکتینگ اکسیژن ",
+            href: "https://ad.oxygenstudio.ir/",
+            image: "/images/webDesign/digitalMarketing.png",
+            alt: " 3 نمونه سئو سایت  "
         },
         {
             id: 4,
-            title: "  تشریفات سالی فود ",
-            href: "https://salifingerfood.ir/",
-            image: "/images/webDesign/salifingerfood.png",
-            alt: " 4 نمونه طراحی سایت  "
+            title: "  موسسه ی فرهنگی هنری آرتا   ",
+            href: "https://oxygenstudio.ir/arta//",
+            image: "/images/webDesign/arta.png",
+            alt: " 4 نمونه سئو سایت  "
         },
         {
             id: 5,
-            title: " هلدینگ رسانه ای اکسیژن ",
-            href: "https://oxygenstudio.ir/",
-            image: "/images/webDesign/oxygenstudio.png",
-            alt: " نمونه طراحی سایت 5 "
+            title: "  تشریفات سالی فود ",
+            href: "https://salifingerfood.ir/",
+            image: "/images/webDesign/salifingerfood.png",
+            alt: " 5 نمونه سئو سایت  "
         },
         {
             id: 6,
-            title: " ایران مکمل ",
-            href: "https://iransupplement.com/?v=b1cb2365a1b7",
-            image: "/images/webDesign/iransupplement.png",
-            alt: " نمونه طراحی سایت 6  "
+            title: " هلدینگ رسانه ای اکسیژن ",
+            href: "https://oxygenstudio.ir/",
+            image: "/images/webDesign/oxygenstudio.png",
+            alt: " نمونه سئو سایت 6 "
         },
+
         {
             id: 7,
-            title: "  کاراکیت ",
-            href: "https://karakitpart.ir/",
-            image: "/images/webDesign/karakit.png",
-            alt: " نمونه طراحی سایت 7  "
-        },
-        {
-            id: 8,
-            title: "  لیزر افزار پرتو ",
-            href: "https://www.laserafzar.ir/",
-            image: "/images/webDesign/laserafzar.png",
-            alt: " نمونه طراحی سایت 8  "
-        },
-        {
-            id: 9,
             title: "    ویکی حرفه ",
             href: "wikiherfeh.vercel.app",
             image: "/images/webDesign/wikiherfeh.png",
-            alt: " نمونه طراحی سایت 9  "
-        },
-        {
-            id: 10,
-            title: "    ونگارد ",
-            href: "https://vanguardbelt.com/vanguardbelt-home/",
-            image: "/images/webDesign/vanguardbelt.png",
-            alt: " نمونه طراحی سایت 10  "
+            alt: " نمونه سئو سایت 9  "
         },
 
-
-        {
-            id: 11,
-            title: " شرکت جک گازی گردون ",
-            href: "https://s-gardoon.com/",
-            image: "/images/webDesign/gardoon.png",
-            alt: " 13 نمونه طراحی سایت  "
-        },
-
-        {
-            id: 12,
-            title: " قهرمان چرخ  ",
-            href: "https://ghch.ir/",
-            image: "/images/webDesign/ghch.png",
-            alt: " 1نمونه طراحی سایت 5 "
-        },
     ];
 
 
@@ -113,10 +77,11 @@ const Seo = () => {
                     </h2>
                 </div>
             </div>
-            <div>
-                <p className='text-right py-8 px-12 leading-8 '>
+            <div className='flex flex-col py-8 px-12 '>
+                <p className='text-right pb-5 leading-8 '>
                     ما در زمینه بهینه‌سازی وب‌سایت‌های فروشگاهی، شرکتی، خبری و خدماتی فعالیت می‌کنیم که منجر به افزایش چشمگیر ترافیک ارگانیک و بهبود رتبه در کلمات کلیدی هدف شده است. تیم متخصص ما با استفاده از جدیدترین تکنیک‌های سئو تکنیکال، تولید محتوای بهینه، لینک‌سازی طبیعی و تحلیل رقبا، نتایج قابل اندازه‌گیری و پایداری را برای مشتریان ارائه می‌دهد
                 </p>
+                <div className="w-2xl h-1 bg-[#FFAC30] rounded-full mx-auto "></div>
             </div>
             <div className="container mx-auto my-5 pb-8">
                 <div className="flex flex-wrap  -mx-4 justify-center">

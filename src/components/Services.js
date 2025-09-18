@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Services = () => {
     return (
-        <div>
+        <div id='services'>
             
             <section className="pb-20  ">
 
@@ -53,7 +53,7 @@ const Services = () => {
                             },
                             {
                                 icon: <Clock className="w-8 h-8" />,
-                                title: "پشتیبانی ۲۴/۷",
+                                title: "پشتیبانی  ۷/۲۴  ",
                                 description: "دریافت کمک فنی در تمامی ساعات شبانه‌روز",
                                 link:'/ComingSoon'
                             }

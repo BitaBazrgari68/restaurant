@@ -1,9 +1,22 @@
+'use client'
 import Image from 'next/image';
 import React from 'react';
-
+import {CornerRightUp } from 'lucide-react';
 import logo from '../../public/images/logo.png'
 import enamad from '../../public/images/enamad.png'
 const Footer = () => {
+    const handleSmoothScroll = (sectionId) => (e) => {
+        if (e) {
+            e.preventDefault();
+        }
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    };
     return (
         <footer className="bg-primary text-white py-12 footer relative mt-32">
             <div className="hidden md:flex md:items-center socialmedia">
@@ -60,18 +73,18 @@ const Footer = () => {
                             </div>
 
                         </div>
-                        <p className="text-gray-400 leading-relaxed">
-                            نرم افزارهای هوشمند ترادا
+                        <p className="text-gray-400 font-semibold text-2xl text-center">
+                            دیتا ترادا
                         </p>
                     </div>
 
                     <div className='mx-auto'>
                         <h3 className="font-bold text-lg drop-shadow-[2px_2px_3px_rgba(0,0,0,0.3)] mb-4 text-secondary">محصولات</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">نرم افزارها</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors"> سئو</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors"> طراحی سایت</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors"> امنیت</a></li>
+                            <li><a href="#software" onClick={handleSmoothScroll('software')} className="hover:text-white transition-colors">نرم افزارها</a></li>
+                            <li><a href="#services" onClick={handleSmoothScroll('services')} className="hover:text-white transition-colors"> سئو</a></li>
+                            <li><a href="#services" onClick={handleSmoothScroll('services')} className="hover:text-white transition-colors"> طراحی سایت</a></li>
+                            <li><a href="#services" onClick={handleSmoothScroll('services')} className="hover:text-white transition-colors"> امنیت</a></li>
                         </ul>
                     </div>
 
@@ -81,7 +94,7 @@ const Footer = () => {
                             <li><a href="#" className="hover:text-white transition-colors">درباره ما</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">تماس با ما</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">وبلاگ</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">کریر</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors"><CornerRightUp/></a></li>
                         </ul>
                     </div>
 

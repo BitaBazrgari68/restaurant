@@ -66,55 +66,55 @@ const Heroimage = () => {
         <div className="min-h-screen relative overflow-hidden bgHero">
             <div className="container mx-auto px-8 py-12 grid lg:grid-cols-2 gap-5 items-center min-h-screen z-10 ">
                 {/* Right Side - Content */}
-                <div className="text-center lg:text-right space-y-8 order-1 lg:order-1 z-20 pr-5 ">
+                <div className="text-right space-y-6 order-1 z-20 pr-5 max-w-4xl">
                     {/* Badge */}
-                    <div className="relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/50 before:pointer-events-none inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+                    <div className="relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/50 before:pointer-events-none inline-flex items-center gap-2 bg-[#243954] backdrop-blur-sm rounded-full px-6 py-3 text-secondary">
                         <Star className="w-5 h-5 fill-yellow-400 text-secondary" />
-                        <span className="text-sm font-medium">  انتخاب مطمئن </span>
+                        <span className="text-sm font-medium [text-shadow:0px_2px_4px_rgba(36,57,84,1)]">انتخاب مطمئن</span>
                     </div>
 
                     {/* Main Title */}
                     <div className="space-y-4">
-                        <h1 className="text-5xl font-semibold text-secondary leading-tight">
+                        <h1 className="text-5xl font-semibold text-secondary leading-tight [text-shadow:0px_2px_4px_rgba(36,57,84,1)]">
                             مجموعه خدمات دیتاترادا
                         </h1>
                     </div>
 
                     {/* CTA Button */}
                     <div className="flex justify-center ">
-                        <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-bold hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105 ">
+                        <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-semibold [text-shadow:0px_2px_4px_rgba(36,57,84,1)] hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105">
                             مشاوره رایگان
                         </button>
                     </div>
 
                     {/* Features */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
-                            <Users className="w-8 h-8 text-green-400 mb-3 mx-auto lg:mr-0" />
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 max-w-3xl relative z-10">
+                        <div className="bg-[#FFAC30] rounded-xl p-5 border border-[#243954]/20 shadowHero relative z-10">
+                            <Users className="w-8 h-8 text-green-400 mb-3 mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">۳۰۰٪ افزایش کارایی</h3>
                             <p className="text-black/50 text-sm">همه ابزارها فقط در یک پنل</p>
                         </div>
 
-                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
-                            <TrendingUp className="w-8 h-8 text-blue-400 mb-3 mx-auto lg:mr-0" />
+                        <div className="bg-[#FFAC30] rounded-xl p-5 border border-[#243954]/20 shadowHero relative z-10">
+                            <TrendingUp className="w-8 h-8 text-blue-400 mb-3 mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">مدیریت هوشمند</h3>
                             <p className="text-black/50 text-sm">دسترسی از هرجا و هر زمان</p>
                         </div>
 
-                        <div className="bg-[#FFAC30]  rounded-xl p-5 border border-[#243954]/20 shadowHero">
-                            <DollarSign className="w-8 h-8 text-red-500 mb-3 mx-auto lg:mr-0" />
+                        <div className="bg-[#FFAC30] rounded-xl p-5 border border-[#243954]/20 shadowHero relative z-10">
+                            <DollarSign className="w-8 h-8 text-red-500 mb-3 mr-0" />
                             <h3 className="font-bold text-black/50 mb-2">کاهش هزینه</h3>
-                            <p className="text-black/50 text-sm">تا ۷۷٪ کاهش هزینه </p>
+                            <p className="text-black/50 text-sm">تا ۷۷٪ کاهش هزینه</p>
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Left Side - Mobile Mockup */}
                 <div className="hidden md:flex md:justify-center order-2 lg:order-2">
-                    <div 
+                    <div
                         className="phone-responsive-container"
-                        style={{ 
-                            transform: `scale(${getPhoneScale()})`, 
+                        style={{
+                            transform: `scale(${getPhoneScale()})`,
                             transformOrigin: 'center',
                             transition: 'transform 0.3s ease'
                         }}

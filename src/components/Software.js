@@ -68,7 +68,7 @@ const Software = () => {
     ];
 
     return (
-        <div className="min-h-screen mt-8 pb-12 bg-white rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)] mb-14">
+        <div id='software' className="min-h-screen mt-8 pb-12 bg-white rounded-br-[15vw] overflow-hidden z-10 shadow-[0px_25px_50px_-25px_rgba(0,52,119,0.27)] mb-14">
             <div className="mx-auto px-4">
                 {/* Header */}
                 <div className={`text-center pb-12 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>

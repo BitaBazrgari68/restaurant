@@ -280,7 +280,7 @@ const Header = () => {
                             </Link>
                         </button>
                         <button className="bg-primary text-secondary px-6 py-2 rounded-lg text-sm font-medium shadow-md relative before:absolute before:inset-1 before:rounded-lg before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none">
-                            <Link href="/">
+                            <Link href="/ComingSoon" target='_blank'>
                                 باشگاه مشتریان
                             </Link>
                         </button>

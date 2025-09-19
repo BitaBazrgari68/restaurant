@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
-import Image from 'next/image';
-
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Star, Users, DollarSign, TrendingUp, } from 'lucide-react';
 
@@ -82,9 +81,11 @@ const Heroimage = () => {
 
                     {/* CTA Button */}
                     <div className="flex justify-center ">
-                        <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-semibold [text-shadow:0px_2px_4px_rgba(36,57,84,1)] hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105">
-                            مشاوره رایگان
-                        </button>
+                        <Link href="/DataTradaPage" target='_blank' >
+                            <button className="bg-primary text-secondary relative before:absolute before:inset-1 before:rounded-full before:border-dashed before:border-1 before:border-[#FFAC30]/30 before:pointer-events-none px-12 py-4 rounded-full text-xl font-semibold [text-shadow:0px_2px_4px_rgba(36,57,84,1)] hover:shadow-2xl hover:shadow-yellow-400/30 transition-all duration-300 transform hover:scale-105">
+                                مشاوره رایگان
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Features */}

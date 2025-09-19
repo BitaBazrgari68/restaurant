@@ -255,36 +255,36 @@ const Signin = () => {
                         </h1>
 
                         <ul className='text-white list-none space-y-3'>
-                            <li className='flex items-center space-x-3 space-x-reverse'>
+                            <li className='flex gap-2 items-center space-x-3 space-x-reverse'>
                                 <Globe className="w-5 h-5 text-blue-400" />
                                 <span>طراحی و تولید سایت</span>
                             </li>
-                            <li className='flex items-center space-x-3 space-x-reverse'>
+                            <li className='flex gap-2 items-center space-x-3 space-x-reverse'>
                                 <Search className="w-5 h-5 text-green-400" />
                                 <span>سئو</span>
                             </li>
-                            <li className='flex items-center space-x-3 space-x-reverse'>
+                            <li className='flex gap-2 items-center space-x-3 space-x-reverse'>
                                 <Shield className="w-5 h-5 text-red-400" />
                                 <span>امنیت</span>
                             </li>
-                            <li className='flex items-center space-x-3 space-x-reverse'>
+                            <li className='flex gap-2 items-center space-x-3 space-x-reverse'>
                                 <Code className="w-5 h-5 text-purple-400" />
                                 <span>تولید نرم افزار</span>
                             </li>
                         </ul>
 
-                        <div className='flex flex-col gap-2 text-white'>
-                            <div className='flex items-center space-x-2 space-x-reverse'>
+                        <div className='flex gap-2 text-white'>
+                            <div className='flex gap-2 items-center space-x-2 space-x-reverse'>
                                 <span>05136043703</span>
                                 <Phone className="w-4 h-4 text-green-400" />
                             </div>
-                            <div className='flex items-center space-x-2 space-x-reverse'>
+                            <div className='flex gap-2 items-center space-x-2 space-x-reverse'>
                                 <span>09154064900</span>
                                 <Phone className="w-4 h-4 text-green-400" />
                             </div>
                         </div>
 
-                        <div className='flex items-start space-x-2 space-x-reverse text-white text-center'>
+                        <div className='flex gap-2 items-start space-x-2 space-x-reverse text-white text-center'>
                             <MapPin className="w-4 h-4 text-red-400 mt-1 flex-shrink-0" />
                             <p className='text-right text-sm leading-relaxed'>
                                 آدرس : مشهد، بلوار وکیل آباد ، خیابان عدل ، عدل 12
